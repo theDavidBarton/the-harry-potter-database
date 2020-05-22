@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "released": {
+      "UK": "06-26-1997",
+      "US": "01-09-1998"
+    },
+    "plotTakePlaceYears": ["1991", "1992"]
+  },
+  {
+    "id": 2,
+    "title": "Harry Potter and the Chamber of Secrets",
+    "released": {
+      "UK": "07-02-1998",
+      "US": "02-06-1999"
+    },
+    "plotTakePlaceYears": ["1992", "1993"]
+  },
+  {
+    "id": 3,
+    "title": "Harry Potter and Prisoner of Azkaban",
+    "released": {
+      "UK": "07-08-1999",
+      "US": "08-09-1999"
+    },
+    "plotTakePlaceYears": ["1993", "1994"]
+  },
+  {
+    "id": 4,
+    "title": "Harry Potter and the Goblet of Fire",
+    "released": {
+      "UK": "07-08-2000",
+      "US": "07-08-2000"
+    },
+    "plotTakePlaceYears": ["1994", "1995"]
+  },
+  {
+    "id": 5,
+    "title": "Harry Potter and the Order of Phoenix",
+    "released": {
+      "UK": "06-21-2003",
+      "US": "06-21-2003"
+    },
+    "plotTakePlaceYears": ["1995", "1996"]
+  },
+  {
+    "id": 6,
+    "title": "Harry Potter and the Half-Blood Prince",
+    "released": {
+      "UK": "07-16-2005",
+      "US": "07-16-2005"
+    },
+    "plotTakePlaceYears": ["1996", "1997"]
+  },
+  {
+    "id": 7,
+    "title": "Harry Potter and the Deathly Hallows",
+    "released": {
+      "UK": "07-21-2007",
+      "US": "07-21-2007"
+    },
+    "plotTakePlaceYears": ["1997", "1998"]
+  }
+]
