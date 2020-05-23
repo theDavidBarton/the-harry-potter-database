@@ -15,7 +15,6 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "jest --verbose --runInBand --detectOpenHandles",
     "lint": "eslint"
   },
   "engines": {
@@ -23,13 +22,7 @@
   },
   "devDependencies": {
     "codecov": "^3.6.5",
-    "eslint": "^7.0.0",
-    "jest": "^26.0.1",
     "nock": "^12.0.3"
-  },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
   },
   "keywords": [
     "api",
