@@ -6,7 +6,16 @@
       "UK": "06-26-1997",
       "US": "01-09-1998"
     },
-    "plotTakePlaceYears": ["1991", "1992"]
+    "plotTakePlaceYears": ["1991", "1992"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237799/Harry_Potter_1_-_Harry_Potter_and_the_Sorcerers_Stone_-_Mary_Grandpre_blzhwd.jpg"
+      }
+    ]
   },
   {
     "id": 2,
@@ -15,7 +24,16 @@
       "UK": "07-02-1998",
       "US": "02-06-1999"
     },
-    "plotTakePlaceYears": ["1992", "1993"]
+    "plotTakePlaceYears": ["1992", "1993"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237793/Harry_Potter_2_-_Harry_Potter_and_the_Chamber_of_Secrets_-_Grandpre_xnbrby.jpg"
+      }
+    ]
   },
   {
     "id": 3,
@@ -24,7 +42,16 @@
       "UK": "07-08-1999",
       "US": "08-09-1999"
     },
-    "plotTakePlaceYears": ["1993", "1994"]
+    "plotTakePlaceYears": ["1993", "1994"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237792/Harry_Potter_3_-_Harry_Potter_and_the_Prisoner_of_Azkaban_-_Mary_Grandpre_x41ufj.jpg"
+      }
+    ]
   },
   {
     "id": 4,
@@ -33,7 +60,16 @@
       "UK": "07-08-2000",
       "US": "07-08-2000"
     },
-    "plotTakePlaceYears": ["1994", "1995"]
+    "plotTakePlaceYears": ["1994", "1995"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237797/Harry_Potter_4_-_Harry_Potter_and_the_Goblet_of_Fire_-_Mary_Grandpre_dvcyl1.jpg"
+      }
+    ]
   },
   {
     "id": 5,
@@ -42,7 +78,16 @@
       "UK": "06-21-2003",
       "US": "06-21-2003"
     },
-    "plotTakePlaceYears": ["1995", "1996"]
+    "plotTakePlaceYears": ["1995", "1996"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237794/Harry_Potter_5_-_Harry_Potter_and_the_Order_of_the_Phoenix_-_Mary_Grandpre_lpesll.jpg"
+      }
+    ]
   },
   {
     "id": 6,
@@ -51,7 +96,16 @@
       "UK": "07-16-2005",
       "US": "07-16-2005"
     },
-    "plotTakePlaceYears": ["1996", "1997"]
+    "plotTakePlaceYears": ["1996", "1997"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237787/Harry_Potter_6_-_Harry_Potter_and_the_Half-Blood_Prince_-_Mary_Grandpre_us5er1.jpg"
+      }
+    ]
   },
   {
     "id": 7,
@@ -60,6 +114,15 @@
       "UK": "07-21-2007",
       "US": "07-21-2007"
     },
-    "plotTakePlaceYears": ["1997", "1998"]
+    "plotTakePlaceYears": ["1997", "1998"],
+    "bookCovers": [
+      {
+        "id": 1,
+        "country": "US",
+        "edition": "1st",
+        "artist": "Mary GrandPré",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590237800/Harry_Potter_7_-_Harry_Potter_and_the_Deathly_Hallows_-_Mary_Grandpre_nfqpyd.jpg"
+      }
+    ]
   }
 ]
