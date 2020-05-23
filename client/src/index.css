@@ -1,0 +1,55 @@
+/* global: overrides bootstrap font with a Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+* {
+  font-family: 'Chelsea Market', cursive;
+}
+
+img {
+  padding: 5px;
+  height: 350px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.github {
+  padding: unset;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+}
+
+/* 404, footer */
+.resized-logo {
+  height: 100%;
+  width: 280px;
+}
+
+/* header */
+.social-list-margin {
+  margin-right: 2em;
+}
+.social-link-style {
+  display: inline-block;
+  width: 104px;
+}
+.social-img-style {
+  margin-right: 0.5em;
+  height: 22px;
+}
+
+/* searchForm */
+.result-list-width {
+  width: 330px;
+}
+.overlay-style {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

@@ -2,7 +2,8 @@
   {
     "id": 1,
     "title": "Harry Potter and the Philosopher's Stone",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "06-26-1997",
       "US": "01-09-1998"
     },
@@ -10,6 +11,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Thomas Taylor",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249796/Harry_Potter_1_-_Harry_Potter_and_the_Philosophers_Stone_-_Thomas_Taylor_tkuvuf.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -20,7 +28,8 @@
   {
     "id": 2,
     "title": "Harry Potter and the Chamber of Secrets",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "07-02-1998",
       "US": "02-06-1999"
     },
@@ -28,6 +37,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Cliff Wright",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249801/Harry_Potter_2_-_Harry_Potter_and_the_Chamber_of_Secrets_-_Cliff_Wright_rkruh4.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -38,7 +54,8 @@
   {
     "id": 3,
     "title": "Harry Potter and Prisoner of Azkaban",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "07-08-1999",
       "US": "08-09-1999"
     },
@@ -46,6 +63,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Cliff Wright",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249805/Harry_Potter_3_-_Harry_Potter_and_the_Prisoner_of_Azkaban_-_Cliff_Wright.jpg_ti6wxh.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -56,7 +80,8 @@
   {
     "id": 4,
     "title": "Harry Potter and the Goblet of Fire",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "07-08-2000",
       "US": "07-08-2000"
     },
@@ -64,6 +89,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Giles Greenfield",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249790/Harry_Potter_4_-_Harry_Potter_and_the_Goblet_of_Fire_-_Giles_Greenfield_lb38dj.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -73,8 +105,9 @@
   },
   {
     "id": 5,
-    "title": "Harry Potter and the Order of Phoenix",
-    "released": {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "06-21-2003",
       "US": "06-21-2003"
     },
@@ -82,6 +115,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Jason Cockcroft",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249804/Harry_Potter_5_-_Harry_Potter_and_the_Order_of_the_Phoenix_-_Jason_Cockcroft_d9pkq3.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -92,7 +132,8 @@
   {
     "id": 6,
     "title": "Harry Potter and the Half-Blood Prince",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "07-16-2005",
       "US": "07-16-2005"
     },
@@ -100,6 +141,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Jason Cockcroft",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249789/Harry_Potter_6_-_Harry_Potter_and_the_Half-Blood_Prince_-_Jason_Cockcroft_gorgek.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
@@ -110,7 +158,8 @@
   {
     "id": 7,
     "title": "Harry Potter and the Deathly Hallows",
-    "released": {
+    "author": "J.K. Rowling",
+    "publishDate": {
       "UK": "07-21-2007",
       "US": "07-21-2007"
     },
@@ -118,6 +167,13 @@
     "bookCovers": [
       {
         "id": 1,
+        "country": "UK",
+        "edition": "1st",
+        "artist": "Jason Cockcroft",
+        "URL": "https://res.cloudinary.com/the-harry-potter-database/image/upload/v1590249805/Harry_Potter_7_-_Harry_Potter_and_the_Deathly_Hallows_-_Jason_Cockcroft_yex7ar.jpg"
+      },
+      {
+        "id": 2,
         "country": "US",
         "edition": "1st",
         "artist": "Mary GrandPré",
