@@ -2,6 +2,8 @@
 
 🗲 A REST api to feed database about Harry Potter books.
 
+![client](screenshot.jpg)
+
 # API docs
 
 `GET`
