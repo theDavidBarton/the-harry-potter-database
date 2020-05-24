@@ -1,5 +1,4 @@
 /*
-___
 MIT License
 
 Copyright (c) 2020 David Barton (theDavidBarton)
@@ -28,6 +27,7 @@ SOFTWARE.
 const express = require('express')
 const cors = require('cors')
 
+const categories = require('./resources/categories.json')
 const books = require('./resources/books.json')
 
 const endpointCreation = () => {
@@ -36,10 +36,29 @@ const endpointCreation = () => {
     const port = process.env.PORT || 5000
     app.use(cors())
 
+    // categories / root
+    app.get(/^\/api\/1(\/$|$|\/categories\/$|\/categories$)/, (req, res) => {
+      res.json(categories)
+      console.log('/api/1/ endpoint has been called!')
+    })
+
+    app.get('/api/1/categories/:id', (req, res) => {
+      const id = req.params.id
+      const idResult = categories.filter(category => category.id == id)
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
+      console.log(`/api/1/categories/${id} endpoint has been called!`)
+    })
+
+    // books
+    app.get('/api/1/books/', (req, res) => {
+      res.json(books)
+      console.log('/api/1/books/ endpoint has been called!')
+    })
+
     app.get('/api/1/books/:id', (req, res) => {
       const id = req.params.id
       const idResult = books.filter(book => book.id == id)
-      idResult[0] ? res.json(idResult) : res.status(404).json({ error: 'no such id!' })
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
       console.log(`/api/1/books/${id} endpoint has been called!`)
     })
 

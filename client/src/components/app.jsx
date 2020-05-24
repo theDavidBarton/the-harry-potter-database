@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Books from './books'
+import Home from './home'
 import Header from './header'
+import Footer from './footer'
 import Page404 from './404'
 
 export default class App extends Component {
@@ -14,7 +16,7 @@ export default class App extends Component {
             <div className='row'>
               <BrowserRouter>
                 <Switch>
-                  <Route exact path='/' component={Books} />
+                  <Route exact path='/' component={Home} />
                   <Route path='/books/:id' component={Books} />
                   <Route component={Page404} />
                 </Switch>
@@ -22,6 +24,7 @@ export default class App extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </Fragment>
     )
   }
