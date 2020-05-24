@@ -5,11 +5,16 @@
   font-family: 'Chelsea Market', cursive;
 }
 
-img {
-  padding: 5px;
-  height: 350px;
-  width: 250px;
-  object-fit: cover;
+pre {
+  margin: 10px;
+  padding: 10px;
+  background-color: #6c757d;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+pre code {
+  color: #ffc107;
 }
 
 .github {

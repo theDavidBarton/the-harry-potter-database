@@ -24,24 +24,39 @@ export default class Books extends Component {
   render() {
     const data = this.state.dataIsReady ? this.state.data[0] : null
     return (
-      <div className='col'>
+      <Fragment>
         {this.state.dataIsReady ? (
           <Fragment>
-            <h1>{data.title}</h1>
-            <h2 className='text-warning'>by {data.author}</h2>
-            <h3>Summary</h3>
-            <p>
-              The book {data.title} written by {data.author} was published in the UK on {data.publishDate['UK']} and on{' '}
-              {data.publishDate['UK']} in the US.
-              <br />
-              The main plot takes place in {data.plotTakePlaceYears[0]} and {data.plotTakePlaceYears[1]}.
-            </p>
-            {data.bookCovers.map(cover => (
-              <img key={cover.id} src={cover.URL} alt={'Artwork by ' + cover.artist} />
-            ))}
+            <div className='col'>
+              <img
+                className='img-fluid'
+                key={data.bookCovers[0].id}
+                src={data.bookCovers[0].URL}
+                alt={'Artwork by ' + data.bookCovers[0].artist}
+              />
+            </div>
+            <div className='col-md-9'>
+              <h1>{data.title}</h1>
+              <h2 className='text-warning'>by {data.author}</h2>
+              <h3>Summary</h3>
+              <p>
+                The book {data.title} written by {data.author} was published in the UK on {data.publishDate['UK']} and on{' '}
+                {data.publishDate['UK']} in the US.
+                <br />
+                The main plot takes place in {data.plotTakePlaceYears[0]} and {data.plotTakePlaceYears[1]}.
+              </p>
+              <h3>Response preview</h3>
+              <code>
+                <kbd>GET</kbd> {window.location.href}
+              </code>
+              :
+              <pre className='pre-scrollable'>
+                <code>{JSON.stringify(data, undefined, 2)}</code>
+              </pre>
+            </div>
           </Fragment>
         ) : null}
-      </div>
+      </Fragment>
     )
   }
 }
