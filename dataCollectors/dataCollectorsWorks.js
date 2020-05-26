@@ -27,6 +27,8 @@ const fs = require('fs')
 const characterCollector = require('./characterCollector')
 const characterUrls = []
 const charactersObj = []
+let indexId = 1 // used as character ID
+let count // no. links on a page
 
 async function dataCollectors() {
   const browser = await puppeteer.launch({ headless: false })
@@ -35,13 +37,15 @@ async function dataCollectors() {
   // await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards?from=Unidentified+Ravenclaw+black+girl+during+the+Battle+of+Hogwarts')
   await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards')
 
-  // close cookie policy
-  const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
-  await getAcceptBtn[0].click()
+  try {
+    // close cookie policy
+    const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
+    await getAcceptBtn[0].click()
+  } catch (e) {
+    console.warning('cookie policy already accepted!')
+  }
 
-  let count
-
-  do {
+  readThroughThePages: do {
     try {
       count = await page.$$eval('.category-page__member-link', el => el.length)
       console.log('count is: ' + count)
@@ -50,23 +54,31 @@ async function dataCollectors() {
         console.log(currentLink)
         characterUrls.push(currentLink)
       }
-      await page.click('.category-page__pagination-next')[0]
+
+      // turn a page
+      try {
+        await page.click('.category-page__pagination-next')[0]
+      } catch (e) {
+        console.warning('"I open at the close!" (last page reached)')
+        break readThroughThePages
+      }
     } catch (e) {
       console.error(e)
     }
   } while (count > 199)
 
+  fs.writeFileSync('./../dataCollectors/characterUrls.json', JSON.stringify(characterUrls))
+
+  // collect characters
   for (const pageUrl of characterUrls) {
     try {
-      await characterCollector(pageUrl, charactersObj, browserWSEndpoint)
+      await characterCollector(indexId, pageUrl, charactersObj, browserWSEndpoint)
+      indexId++
     } catch (e) {
       console.error(e)
     }
   }
 
-  console.log(characterUrls)
-  // write to file
-  fs.writeFileSync('./../dataCollectors/characterUrls.json', JSON.stringify(characterUrls))
   fs.writeFileSync('./../dataCollectors/characters.json', JSON.stringify(charactersObj))
 
   await browser.close()
