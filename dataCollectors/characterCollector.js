@@ -75,7 +75,7 @@ async function characterCollector(index = 1, url, charactersObj, browserWSEndpoi
 
   browser = await puppeteer.launch({ headless: true })
   page = await browser.newPage()
-  await page.goto('https://harrypotter.fandom.com/wiki/Template:Individual_infobox_test')
+  await page.goto('https://harrypotter.fandom.com/wiki/Alastor_Moody')
 
   try {
     // close cookie policy
