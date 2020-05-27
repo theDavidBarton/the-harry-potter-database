@@ -25,14 +25,17 @@ SOFTWARE.
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 const characterCollector = require('./characterCollector')
-const characterUrls = []
-const charactersObj = []
+let characterUrls = []
+let charactersObj = []
 let indexId = 1 // used as character ID
 let count // no. links on a page
 
+module.exports = { charactersObj }
+
 async function dataCollectors() {
-  const browser = await puppeteer.launch({ headless: false })
+  const browser = await puppeteer.launch({ headless: true })
   const browserWSEndpoint = await browser.wsEndpoint()
+
   const page = await browser.newPage()
   // await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards?from=Unidentified+Ravenclaw+black+girl+during+the+Battle+of+Hogwarts')
   await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards')
@@ -42,7 +45,7 @@ async function dataCollectors() {
     const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
     await getAcceptBtn[0].click()
   } catch (e) {
-    console.warning('cookie policy already accepted!')
+    console.log('cookie policy already accepted!')
   }
 
   readThroughThePages: do {
@@ -54,32 +57,36 @@ async function dataCollectors() {
         console.log(currentLink)
         characterUrls.push(currentLink)
       }
-
-      // turn a page
-      try {
-        await page.click('.category-page__pagination-next')[0]
-      } catch (e) {
-        console.warning('"I open at the close!" (last page reached)')
-        break readThroughThePages
-      }
     } catch (e) {
       console.error(e)
     }
-  } while (count > 199)
 
-  fs.writeFileSync('./../dataCollectors/characterUrls.json', JSON.stringify(characterUrls))
+    // turn a page
+    try {
+      await page.waitForSelector('.category-page__pagination-next')[0]
+      await page.click('.category-page__pagination-next')[0]
+    } catch (e) {
+      console.log('"I open at the close!" (last page reached)')
+      break readThroughThePages
+    }
+  } while (
+    (await page.url()) === 'https://harrypotter.fandom.com/wiki/Category:Wizards?from=Wizard+who+claimed+to+be+a+dragon+killer'
+  )
+
+  fs.writeFileSync('dataCollectors/characterUrls.json', JSON.stringify(characterUrls))
 
   // collect characters
   for (const pageUrl of characterUrls) {
     try {
-      await characterCollector(indexId, pageUrl, charactersObj, browserWSEndpoint)
+      await characterCollector(indexId, pageUrl, browserWSEndpoint)
       indexId++
+      console.log(charactersObj)
     } catch (e) {
       console.error(e)
     }
   }
 
-  fs.writeFileSync('./../dataCollectors/characters.json', JSON.stringify(charactersObj))
+  fs.writeFileSync('dataCollectors/characters.json', JSON.stringify(charactersObj))
 
   await browser.close()
 }

@@ -30,9 +30,9 @@ export default class Books extends Component {
             <div className='col'>
               <img
                 className='img-fluid'
-                key={data.bookCovers[0].id}
-                src={data.bookCovers[0].URL}
-                alt={'Artwork by ' + data.bookCovers[0].artist}
+                key={data.book_covers[0].id}
+                src={data.book_covers[0].URL}
+                alt={'Artwork by ' + data.book_covers[0].artist}
               />
             </div>
             <div className='col-md-9'>
@@ -40,10 +40,10 @@ export default class Books extends Component {
               <h2 className='text-warning'>by {data.author}</h2>
               <h3>Summary</h3>
               <p>
-                The book {data.title} written by {data.author} was published in the UK on {data.publishDate['UK']} and on{' '}
-                {data.publishDate['UK']} in the US.
+                The book {data.title} written by {data.author} was published in the UK on {data.publish_date['UK']} and on{' '}
+                {data.publish_date['UK']} in the US.
                 <br />
-                The main plot takes place in {data.plotTakePlaceYears[0]} and {data.plotTakePlaceYears[1]}.
+                The main plot takes place in {data.plot_take_place_years[0]} and {data.plot_take_place_years[1]}.
               </p>
               <h3>Response preview</h3>
               <code>

@@ -23,12 +23,12 @@ SOFTWARE.
 */
 
 const puppeteer = require('puppeteer')
+const charactersObj = require('./dataCollectorsWorks').charactersObj
 
 // Uncle Bob Martin, please come & kill me!🧓
-async function characterCollector(index = 1, url, charactersObj, browserWSEndpoint) {
+async function characterCollector(index, url, browserWSEndpoint) {
   let browser
   let page
-  charactersObj = []
 
   let idData = index
   let nameData = null
@@ -63,28 +63,39 @@ async function characterCollector(index = 1, url, charactersObj, browserWSEndpoi
       this.birth = birth
       this.ancestry = ancestry
       this.gender = gender
-      this.hairColor = hairColor
-      this.eyeColor = eyeColor
+      this.hair_color = hairColor
+      this.eye_color = eyeColor
       this.wand = wand
       this.patronus = patronus
       this.house = house
-      this.associatedGroups = associatedGroups
-      this.booksFeaturedIn = booksFeaturedIn
+      this.associated_groups = associatedGroups
+      this.books_featured_in = booksFeaturedIn
     }
   }
 
-  browser = await puppeteer.launch({ headless: true })
+  browser = await puppeteer.connect({ browserWSEndpoint })
   page = await browser.newPage()
-  await page.goto('https://harrypotter.fandom.com/wiki/Alastor_Moody')
 
+  // abort all images, source: https://github.com/GoogleChrome/puppeteer/blob/master/examples/block-images.js
+  await page.setRequestInterception(true)
+  page.on('request', request => {
+    if (request.resourceType() === 'image') {
+      request.abort()
+    } else {
+      request.continue()
+    }
+  })
+
+  await page.goto(url)
+  /*
   try {
     // close cookie policy
     const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
     await getAcceptBtn[0].click()
   } catch (e) {
-    console.warning('cookie policy already accepted!')
+    console.log('cookie policy already accepted!')
   }
-
+*/
   // name of character
   nameData = await page.evaluate(el => el.innerText, (await page.$$('h1'))[0])
 
@@ -127,7 +138,10 @@ async function characterCollector(index = 1, url, charactersObj, browserWSEndpoi
         console.log(nameData + "'s houseData is: " + houseData)
         break
       case /Loyalty/.test(actualAsideText):
-        associatedGroupsData = actualAsideText.split(/\n/).map(el => el.replace(/\[\d+\]|\n/gm, ''))
+        associatedGroupsData = actualAsideText
+          .split(/\n/)
+          .map(el => el.replace(/\[\d+\]|\n/gm, ''))
+          .filter(el => !/Loyalty/g.test(el)) // remove category header
         console.log(nameData + "'s associatedGroupsData is: " + associatedGroupsData)
         break
       default:

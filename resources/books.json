@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "06-26-1997"
       },
@@ -11,8 +11,8 @@
         "US": "01-09-1998"
       }
     ],
-    "plotTakePlaceYears": ["1991", "1992"],
-    "bookCovers": [
+    "plot_take_place_years": ["1991", "1992"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -33,7 +33,7 @@
     "id": 2,
     "title": "Harry Potter and the Chamber of Secrets",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "07-02-1998"
       },
@@ -41,8 +41,8 @@
         "US": "02-06-1999"
       }
     ],
-    "plotTakePlaceYears": ["1992", "1993"],
-    "bookCovers": [
+    "plot_take_place_years": ["1992", "1993"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -63,7 +63,7 @@
     "id": 3,
     "title": "Harry Potter and Prisoner of Azkaban",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "07-08-1999"
       },
@@ -71,8 +71,8 @@
         "US": "08-09-1999"
       }
     ],
-    "plotTakePlaceYears": ["1993", "1994"],
-    "bookCovers": [
+    "plot_take_place_years": ["1993", "1994"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -93,7 +93,7 @@
     "id": 4,
     "title": "Harry Potter and the Goblet of Fire",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "07-08-2000"
       },
@@ -101,8 +101,8 @@
         "US": "07-08-2000"
       }
     ],
-    "plotTakePlaceYears": ["1994", "1995"],
-    "bookCovers": [
+    "plot_take_place_years": ["1994", "1995"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -123,7 +123,7 @@
     "id": 5,
     "title": "Harry Potter and the Order of the Phoenix",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "06-21-2003"
       },
@@ -131,8 +131,8 @@
         "US": "06-21-2003"
       }
     ],
-    "plotTakePlaceYears": ["1995", "1996"],
-    "bookCovers": [
+    "plot_take_place_years": ["1995", "1996"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -153,7 +153,7 @@
     "id": 6,
     "title": "Harry Potter and the Half-Blood Prince",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "07-16-2005"
       },
@@ -161,8 +161,8 @@
         "US": "07-16-2005"
       }
     ],
-    "plotTakePlaceYears": ["1996", "1997"],
-    "bookCovers": [
+    "plot_take_place_years": ["1996", "1997"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
@@ -183,7 +183,7 @@
     "id": 7,
     "title": "Harry Potter and the Deathly Hallows",
     "author": "J.K. Rowling",
-    "publishDate": [
+    "publish_date": [
       {
         "UK": "07-21-2007"
       },
@@ -191,8 +191,8 @@
         "US": "07-21-2007"
       }
     ],
-    "plotTakePlaceYears": ["1997", "1998"],
-    "bookCovers": [
+    "plot_take_place_years": ["1997", "1998"],
+    "book_covers": [
       {
         "id": 1,
         "country": "UK",
