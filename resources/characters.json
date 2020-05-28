@@ -3991,7 +3991,493 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1212,
+    "id": 1202,
+    "name": "Oakden Hobday",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 1209,
+    "name": "Hogwarts Express conductor",
+    "birth": "c. 1920s-1950s",
+    "death": null,
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Male",
+    "hair_color": "Brown",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Hogwarts Express crew", "Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 1215,
+    "name": "Phillipus von Hohenheim",
+    "birth": "1493",
+    "death": "1541 (aged 47-48)",
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "White",
+    "eye_color": "Blue",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [1, 5]
+  },
+  {
+    "id": 1222,
+    "name": "Rolanda Hooch",
+    "birth": "pre 1918",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Grey",
+    "eye_color": "Yellow",
+    "wand": "Unknown length, wood and core",
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [1, 2, 3, 5, 6]
+  },
+  {
+    "id": 1224,
+    "name": "Geoffrey Hooper",
+    "birth": "c. Pre 31 August 1983",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": ["Hooper family", "Hogwarts School of Witchcraft and Wizardry", "Gryffindor"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 1228,
+    "name": "Mafalda Hopkirk",
+    "birth": "February 19 - March 20 , in or before 1975",
+    "death": null,
+    "ancestry": "Pure-blood or half-blood",
+    "gender": "Female",
+    "hair_color": "Grey",
+    "eye_color": null,
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": ["British Ministry of Magic", "Improper Use of Magic Office", "Death Eaters (indirectly)"],
+    "books_featured_in": [2, 5, 7]
+  },
+  {
+    "id": 1230,
+    "name": "Horace",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Honeydukes Sweetshop"],
+    "books_featured_in": [3]
+  },
+  {
+    "id": 1232,
+    "name": "Olive Hornby's brother",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1233,
+    "name": "Olive Hornby",
+    "birth": "c. 1926 - 1932",
+    "death": "Before 1995",
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hornby family"],
+    "books_featured_in": [2, 4]
+  },
+  {
+    "id": 1239,
+    "name": "Unidentified Hufflepuff girl (III)",
+    "birth": "betwen 1 September 1980 and 31 August 1981 (most likely)",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Unknown, curly",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Hufflepuff House",
+    "associated_groups": [],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1242,
+    "name": "Helga Hufflepuff",
+    "birth": "Pre 976",
+    "death": "11th century (possibly)",
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Female",
+    "hair_color": "Brown",
+    "eye_color": "Blue",
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": "Hufflepuff",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff", "Hufflepuff family"],
+    "books_featured_in": [2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 1259,
+    "name": "Inigo Imago",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 1264,
+    "name": "Clara Ivanova",
+    "birth": "before 1977, Bulgaria (possibly)",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Red",
+    "eye_color": "Green",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Bulgarian National Quidditch team"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1283,
+    "name": "Joey Jenkins",
+    "birth": "In or before 1977",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Chudley Cannons", "Jenkins family"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1286,
+    "name": "Arsenius Jigger",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Brown",
+    "eye_color": "Dark",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 1290,
+    "name": "Angelina Johnson",
+    "birth": "24 – 30 October, 1977",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": "Unknown length, wood and core",
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Johnson family",
+      "Weasley family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor",
+      "Gryffindor Quidditch team",
+      "Dumbledore's Army"
+    ],
+    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 1294,
+    "name": "Gwenog Jones",
+    "birth": "1968",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Brown",
+    "eye_color": "Brown",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [
+      "Jones family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Slug Club",
+      "Holyhead Harpies",
+      "Welsh National Quidditch team"
+    ],
+    "books_featured_in": [6, 7]
+  },
+  {
+    "id": 1295,
+    "name": "Hestia Jones",
+    "birth": "Pre 1978",
+    "death": null,
+    "ancestry": "Pure-blood or half-blood (most likely)",
+    "gender": "Female",
+    "hair_color": "Black",
+    "eye_color": null,
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": ["Jones family", "Order of the Phoenix", "Advance Guard", "Harry Potter"],
+    "books_featured_in": [5, 7]
+  },
+  {
+    "id": 1299,
+    "name": "Lee Jordan",
+    "birth": "Between 1 September 1977 and 31 August 1978",
+    "death": null,
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Male",
+    "hair_color": "Black (dreadlocks)",
+    "eye_color": "Brown",
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Jordan family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor",
+      "Dumbledore's Army",
+      "Order of the Phoenix",
+      "Potterwatch"
+    ],
+    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 1300,
+    "name": "Lee Jordan's father",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor (likely)",
+    "associated_groups": ["Jordan family"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1302,
+    "name": "Bertha Jorkins",
+    "birth": "1 September 1953 - 31 August 1958; Great Britain or Ireland",
+    "death": "1994 (aged around 35 - 40), Albania",
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [
+      "British Ministry of Magic",
+      "Department of Magical Games and Sports",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Daily Prophet (formerly)",
+      "Jorkins family"
+    ],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1322,
+    "name": "Karl H.",
+    "birth": "Before 1993",
+    "death": null,
+    "ancestry": null,
+    "gender": null,
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [3]
+  },
+  {
+    "id": 1340,
+    "name": "Silvanus Kettleburn",
+    "birth": "22 November, before 1927[citation needed]",
+    "death": "Between 2 May, 1998 and 22 November, 2014",
+    "ancestry": "Pure-blood or half-blood",
+    "gender": "Male",
+    "hair_color": "Silver",
+    "eye_color": "Brown",
+    "wand": "Chestnut and phoenix feather, 11½\", whippy",
+    "patronus": null,
+    "house": "Hufflepuff",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff", "Kettleburn family"],
+    "books_featured_in": [3]
+  },
+  {
+    "id": 1342,
+    "name": "Kevin",
+    "birth": "c. 1992",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Kevin's family"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1344,
+    "name": "Kevin's father",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": "Unknown length, wood and core materials",
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Kevin's family"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1345,
+    "name": "Kevin's mother",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Kevin's family"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 1360,
+    "name": "Andrew Kirke",
+    "birth": "31 August 1983 or earlierGreat Britain or Ireland",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Kirke family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor",
+      "Gryffindor Quidditch team"
+    ],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 1379,
+    "name": "Viktor Krum",
+    "birth": "April-August, 1976,",
+    "death": null,
+    "ancestry": "Pure-blood or half-blood",
+    "gender": "Male",
+    "hair_color": "Dark",
+    "eye_color": "Dark",
+    "wand": "10¼\", Hornbeam, dragon heartstring",
+    "patronus": null,
+    "house": null,
+    "associated_groups": [
+      "Durmstrang Institute",
+      "Bulgarian National Quidditch team",
+      "Krum family",
+      "Death Eaters (Imperiused)"
+    ],
+    "books_featured_in": [4, 5, 6, 7]
+  },
+  {
+    "id": 1382,
+    "name": "Lachlan the Lanky",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 1393,
+    "name": "Lancelot (Healer)",
+    "birth": null,
+    "death": null,
+    "ancestry": "Half-blood or Pure-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["St Mungo's Hospital for Magical Maladies and Injuries", "Prewett family (possibly)"],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 1412,
     "name": "Leanne",
     "birth": "between 1 September 1979 and 31 August 1980",
     "death": null,
@@ -4006,7 +4492,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1221,
+    "id": 1421,
     "name": "Lestrange",
     "birth": "c. 1920s",
     "death": null,
@@ -4027,7 +4513,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1259,
+    "id": 1459,
     "name": "Alexei Levski",
     "birth": "before 1977, Bulgaria",
     "death": null,
@@ -4042,7 +4528,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1282,
+    "id": 1482,
     "name": "Livius",
     "birth": null,
     "death": null,
@@ -4057,7 +4543,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1285,
+    "id": 1485,
     "name": "Dai Llewellyn",
     "birth": null,
     "death": "Before 1995,",
@@ -4072,7 +4558,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1289,
+    "id": 1489,
     "name": "Gilderoy Lockhart",
     "birth": "26 January, 1964",
     "death": null,
@@ -4095,7 +4581,7 @@
     "books_featured_in": [2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1293,
+    "id": 1493,
     "name": "Frank Longbottom's father",
     "birth": "Before 1947",
     "death": "Between 1980 and 1995",
@@ -4110,7 +4596,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1295,
+    "id": 1495,
     "name": "Algie Longbottom",
     "birth": null,
     "death": null,
@@ -4125,7 +4611,7 @@
     "books_featured_in": [1, 5]
   },
   {
-    "id": 1296,
+    "id": 1496,
     "name": "Alice Longbottom",
     "birth": null,
     "death": null,
@@ -4145,7 +4631,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 1297,
+    "id": 1497,
     "name": "Augusta Longbottom",
     "birth": "pre 1947",
     "death": null,
@@ -4160,7 +4646,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1298,
+    "id": 1498,
     "name": "Frank Longbottom",
     "birth": "c. 1 September 1957 - 31 August 1959 or earlier",
     "death": null,
@@ -4181,7 +4667,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 1300,
+    "id": 1500,
     "name": "Neville Longbottom",
     "birth": "30 July, 1980",
     "death": null,
@@ -4210,7 +4696,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1308,
+    "id": 1508,
     "name": "Luna Lovegood",
     "birth": "13 February, 1981",
     "death": null,
@@ -4233,7 +4719,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 1309,
+    "id": 1509,
     "name": "Pandora Lovegood",
     "birth": null,
     "death": "Between 13 February, 1990 and 12 February, 1991",
@@ -4248,7 +4734,7 @@
     "books_featured_in": [5, 7]
   },
   {
-    "id": 1310,
+    "id": 1510,
     "name": "Xenophilius Lovegood",
     "birth": "before 1964 (most likely),",
     "death": null,
@@ -4270,7 +4756,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 1320,
+    "id": 1520,
     "name": "Lyall Lupin",
     "birth": "1929",
     "death": null,
@@ -4291,7 +4777,7 @@
     "books_featured_in": [3, 6]
   },
   {
-    "id": 1321,
+    "id": 1521,
     "name": "Remus Lupin",
     "birth": "10 March, 1960",
     "death": "2 May, 1998 (aged 38)",
@@ -4316,7 +4802,7 @@
     "books_featured_in": [3, 4, 5, 6, 7]
   },
   {
-    "id": 1322,
+    "id": 1522,
     "name": "Edward Lupin",
     "birth": "April, 1998",
     "death": null,
@@ -4338,7 +4824,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1325,
+    "id": 1525,
     "name": "Aidan Lynch",
     "birth": null,
     "death": null,
@@ -4353,7 +4839,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1329,
+    "id": 1529,
     "name": "Quintius MacBoon",
     "birth": null,
     "death": null,
@@ -4368,7 +4854,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1332,
+    "id": 1532,
     "name": "Morag MacDougal",
     "birth": "c. 1979-1980,",
     "death": null,
@@ -4383,7 +4869,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 1340,
+    "id": 1540,
     "name": "Ernest Macmillan",
     "birth": "Between 22 April 1980 and 31 August 1980",
     "death": null,
@@ -4398,7 +4884,7 @@
     "books_featured_in": [2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1342,
+    "id": 1542,
     "name": "Laura Madley",
     "birth": "between 1 September 1982 and 31 August 1983, Great Britain or Ireland",
     "death": null,
@@ -4413,11 +4899,11 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1346,
+    "id": 1546,
     "name": "Mafalda",
     "birth": "between 1 September 1982 and 31 August 1983, Great Britain or Ireland",
     "death": null,
-    "ancestry": "Half-blood (child of Squib father and Muggle mother)",
+    "ancestry": "Muggle-born or Half-blood (possibly)",
     "gender": "Female",
     "hair_color": null,
     "eye_color": null,
@@ -4428,7 +4914,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1349,
+    "id": 1549,
     "name": "Magical Menagerie saleswoman",
     "birth": null,
     "death": null,
@@ -4443,7 +4929,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 1363,
+    "id": 1563,
     "name": "Abraxas Malfoy",
     "birth": "before 1936 (most likely), Great Britain or Ireland",
     "death": "Pre 2 September, 1996",
@@ -4458,7 +4944,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1368,
+    "id": 1568,
     "name": "Scorpius Malfoy",
     "birth": "between 1 September 2005 and 31 August 2006",
     "death": null,
@@ -4473,7 +4959,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1370,
+    "id": 1570,
     "name": "Malkin",
     "birth": null,
     "death": null,
@@ -4488,7 +4974,7 @@
     "books_featured_in": [1, 3, 5, 6, 7]
   },
   {
-    "id": 1381,
+    "id": 1581,
     "name": "Griselda Marchbanks",
     "birth": "No later than the 1870s",
     "death": null,
@@ -4503,7 +4989,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1387,
+    "id": 1587,
     "name": "Marius",
     "birth": null,
     "death": null,
@@ -4518,7 +5004,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1390,
+    "id": 1590,
     "name": "Marsh",
     "birth": null,
     "death": null,
@@ -4533,7 +5019,7 @@
     "books_featured_in": [3, 5]
   },
   {
-    "id": 1394,
+    "id": 1594,
     "name": "Mary Macdonald",
     "birth": "1 September, 1958 - 31 August, 1965 (most likely)Great Britain or Ireland",
     "death": null,
@@ -4548,7 +5034,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1400,
+    "id": 1600,
     "name": "Daphne Mauboisan",
     "birth": null,
     "death": null,
@@ -4563,7 +5049,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 1404,
+    "id": 1604,
     "name": "Olympe Maxime",
     "birth": null,
     "death": null,
@@ -4578,7 +5064,7 @@
     "books_featured_in": [4, 5, 6]
   },
   {
-    "id": 1413,
+    "id": 1613,
     "name": "Natalie McDonald",
     "birth": "between 1 September 1982 and 31 August 1983, Great Britain",
     "death": null,
@@ -4593,7 +5079,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1419,
+    "id": 1619,
     "name": "Minerva McGonagall",
     "birth": "4 October,",
     "death": null,
@@ -4620,7 +5106,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1424,
+    "id": 1624,
     "name": "Marlene McKinnon",
     "birth": null,
     "death": "July, 1981",
@@ -4635,7 +5121,7 @@
     "books_featured_in": [1, 4, 5, 7]
   },
   {
-    "id": 1425,
+    "id": 1625,
     "name": "Cormac McLaggen",
     "birth": "between 1 September 1978 and 31 August 1979",
     "death": null,
@@ -4657,7 +5143,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1437,
+    "id": 1637,
     "name": "Dorcas Meadowes",
     "birth": null,
     "death": "1981",
@@ -4672,7 +5158,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1447,
+    "id": 1647,
     "name": "Merlin",
     "birth": "c. 982 or later",
     "death": null,
@@ -4687,7 +5173,7 @@
     "books_featured_in": [1, 2, 4, 7]
   },
   {
-    "id": 1448,
+    "id": 1648,
     "name": "Galatea Merrythought",
     "birth": "Pre-1878",
     "death": null,
@@ -4702,7 +5188,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1453,
+    "id": 1653,
     "name": "Eloise Midgen",
     "birth": "31 August 1983 or earlier",
     "death": null,
@@ -4717,7 +5203,7 @@
     "books_featured_in": [4, 5, 6]
   },
   {
-    "id": 1454,
+    "id": 1654,
     "name": "Eloise Midgen's father",
     "birth": null,
     "death": null,
@@ -4732,7 +5218,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1456,
+    "id": 1656,
     "name": "Millamant",
     "birth": null,
     "death": null,
@@ -4747,7 +5233,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1461,
+    "id": 1661,
     "name": "Nicholas de Mimsy-Porpington",
     "birth": "Between 1401 and 1475,",
     "death": "31 October, 1492 (aged 17- 91)",
@@ -4767,7 +5253,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1482,
+    "id": 1682,
     "name": "Marcus Minugius",
     "birth": null,
     "death": null,
@@ -4782,7 +5268,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 1496,
+    "id": 1696,
     "name": "Cuthbert Mockridge",
     "birth": "before 1976",
     "death": null,
@@ -4797,7 +5283,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1503,
+    "id": 1703,
     "name": "Picture of drunk monks",
     "birth": null,
     "death": null,
@@ -4812,7 +5298,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1507,
+    "id": 1707,
     "name": "Graham Montague",
     "birth": "In or prior to c.1981,",
     "death": null,
@@ -4833,7 +5319,7 @@
     "books_featured_in": [3, 5, 6]
   },
   {
-    "id": 1508,
+    "id": 1708,
     "name": "Graham Montague's father",
     "birth": null,
     "death": null,
@@ -4848,7 +5334,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1509,
+    "id": 1709,
     "name": "Graham Montague's mother",
     "birth": null,
     "death": null,
@@ -4863,7 +5349,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1513,
+    "id": 1713,
     "name": "Montgomery",
     "birth": "Between April 1991 and April 1992",
     "death": "April 1997 (aged 5)",
@@ -4878,7 +5364,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1514,
+    "id": 1714,
     "name": "Montgomery children's mother",
     "birth": "before 1969 (most likely)",
     "death": null,
@@ -4893,7 +5379,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1515,
+    "id": 1715,
     "name": "Montgomery sisters",
     "birth": "Circa 1978-1985",
     "death": null,
@@ -4908,7 +5394,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1519,
+    "id": 1719,
     "name": "Alastor Moody",
     "birth": "Pre 1960",
     "death": "27 July, 1997",
@@ -4929,7 +5415,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 1521,
+    "id": 1721,
     "name": "Lily Moon",
     "birth": "2 September, 1979 - 1 September, 1980",
     "death": null,
@@ -4944,7 +5430,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 1524,
+    "id": 1724,
     "name": "Mopsus (Potter-era)",
     "birth": null,
     "death": null,
@@ -4959,7 +5445,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 1527,
+    "id": 1727,
     "name": "Moran",
     "birth": null,
     "death": null,
@@ -4974,7 +5460,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1539,
+    "id": 1739,
     "name": "Mortlake",
     "birth": null,
     "death": null,
@@ -4989,7 +5475,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 1540,
+    "id": 1740,
     "name": "Hassan Mostafa",
     "birth": "Before 1977, (most likely) Egypt",
     "death": null,
@@ -5004,7 +5490,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1547,
+    "id": 1747,
     "name": "Mullet",
     "birth": null,
     "death": null,
@@ -5019,7 +5505,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1550,
+    "id": 1750,
     "name": "Eric Munch",
     "birth": null,
     "death": null,
@@ -5034,7 +5520,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1554,
+    "id": 1754,
     "name": "Muriel",
     "birth": "Between 2 August, 1889 and 31 July, 1890",
     "death": null,
@@ -5049,7 +5535,7 @@
     "books_featured_in": [6, 7]
   },
   {
-    "id": 1555,
+    "id": 1755,
     "name": "Muriel's mother",
     "birth": "Before 2 August, 1890",
     "death": null,
@@ -5064,7 +5550,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1577,
+    "id": 1777,
     "name": "Z. Nettles",
     "birth": null,
     "death": null,
@@ -5079,7 +5565,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 1596,
+    "id": 1796,
     "name": "Unidentified nose-picking wizard",
     "birth": null,
     "death": null,
@@ -5094,7 +5580,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1598,
+    "id": 1798,
     "name": "Theodore Nott",
     "birth": "1 September, 1979 – 21 April, 1980",
     "death": null,
@@ -5109,7 +5595,7 @@
     "books_featured_in": [1, 5, 6]
   },
   {
-    "id": 1618,
+    "id": 1818,
     "name": "Oblansk",
     "birth": null,
     "death": null,
@@ -5124,7 +5610,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1619,
+    "id": 1819,
     "name": "Roberts' Obliviator",
     "birth": null,
     "death": null,
@@ -5139,7 +5625,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1621,
+    "id": 1821,
     "name": "Odo",
     "birth": null,
     "death": null,
@@ -5154,7 +5640,7 @@
     "books_featured_in": [6, 7]
   },
   {
-    "id": 1624,
+    "id": 1824,
     "name": "Bob Ogden",
     "birth": "1908 at the latest",
     "death": "Some time before 7 September, 1996",
@@ -5169,7 +5655,7 @@
     "books_featured_in": [6, 7]
   },
   {
-    "id": 1625,
+    "id": 1825,
     "name": "Tiberius Ogden",
     "birth": "before 1977",
     "death": null,
@@ -5184,7 +5670,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1626,
+    "id": 1826,
     "name": "Ogg",
     "birth": null,
     "death": null,
@@ -5199,7 +5685,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1664,
+    "id": 1864,
     "name": "Painting of sinister-looking monks",
     "birth": null,
     "death": "Before 1993",
@@ -5214,7 +5700,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 1684,
+    "id": 1884,
     "name": "Pansy Parkinson",
     "birth": "between 1 September 1979 and 31 August 1980",
     "death": null,
@@ -5236,7 +5722,7 @@
     "books_featured_in": [1, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1691,
+    "id": 1891,
     "name": "Padma Patil",
     "birth": "Between 1 September, 1979 and 21 April, 1980",
     "death": null,
@@ -5251,7 +5737,7 @@
     "books_featured_in": [1, 4, 5, 6, 7]
   },
   {
-    "id": 1692,
+    "id": 1892,
     "name": "Parvati Patil",
     "birth": "between 1 September 1979 and 22 April 1980",
     "death": null,
@@ -5266,7 +5752,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1693,
+    "id": 1893,
     "name": "Patil twins' father",
     "birth": null,
     "death": null,
@@ -5281,7 +5767,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1694,
+    "id": 1894,
     "name": "Patil twins' mother",
     "birth": null,
     "death": null,
@@ -5296,7 +5782,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1699,
+    "id": 1899,
     "name": "Jimmy Peakes",
     "birth": "between 1 September 1982 and 31 August 1983",
     "death": null,
@@ -5316,7 +5802,7 @@
     "books_featured_in": [6, 7]
   },
   {
-    "id": 1702,
+    "id": 1902,
     "name": "Arnold Peasegood",
     "birth": "1976 or earlier",
     "death": null,
@@ -5331,7 +5817,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1715,
+    "id": 1915,
     "name": "Octavius Pepper",
     "birth": null,
     "death": "Spring, 1997 (possibly)",
@@ -5346,7 +5832,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1716,
+    "id": 1916,
     "name": "Perkins",
     "birth": "Before 1975",
     "death": null,
@@ -5361,7 +5847,7 @@
     "books_featured_in": [2, 4, 5, 7]
   },
   {
-    "id": 1717,
+    "id": 1917,
     "name": "Sally-Anne Perks",
     "birth": "between 1 September 1979 and 31 August 1980",
     "death": null,
@@ -5376,7 +5862,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 1730,
+    "id": 1930,
     "name": "Peter Pettigrew's mother",
     "birth": null,
     "death": null,
@@ -5391,7 +5877,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 1731,
+    "id": 1931,
     "name": "Enid Pettigrew",
     "birth": null,
     "death": null,
@@ -5406,7 +5892,7 @@
     "books_featured_in": [3, 4, 6, 7]
   },
   {
-    "id": 1733,
+    "id": 1933,
     "name": "Ignotus Peverell's son",
     "birth": "13th century",
     "death": "After 18 May, 1292",
@@ -5421,7 +5907,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1734,
+    "id": 1934,
     "name": "Antioch Peverell's enemy",
     "birth": null,
     "death": "Between 12 July, 1214 and 18 May, 1291",
@@ -5436,7 +5922,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1735,
+    "id": 1935,
     "name": "Cadmus Peverell's fiancée",
     "birth": null,
     "death": "c. 13th century",
@@ -5451,7 +5937,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1736,
+    "id": 1936,
     "name": "Antioch Peverell",
     "birth": "Prior to 12 July, 1214",
     "death": "Prior to 19 May, 1292",
@@ -5466,7 +5952,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1737,
+    "id": 1937,
     "name": "Cadmus Peverell",
     "birth": "Prior to 12 July, 1214",
     "death": "Prior to 19 May, 1292",
@@ -5481,7 +5967,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1738,
+    "id": 1938,
     "name": "Ignotus Peverell",
     "birth": "12 July, 1214",
     "death": "19 May, 1292 (aged 77)",
@@ -5496,7 +5982,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 1744,
+    "id": 1944,
     "name": "Arkie Philpott",
     "birth": null,
     "death": null,
@@ -5511,7 +5997,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 1756,
+    "id": 1956,
     "name": "Irma Pince",
     "birth": "Pre 1966 (most likely)",
     "death": null,
@@ -5526,7 +6012,7 @@
     "books_featured_in": [1, 2, 4, 5, 6]
   },
   {
-    "id": 1776,
+    "id": 1976,
     "name": "Sturgis Podmore",
     "birth": "Between 8 September 1956 and 7 September 1957",
     "death": null,
@@ -5541,7 +6027,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 1780,
+    "id": 1980,
     "name": "Poliakoff",
     "birth": "on or before 30 October 1977",
     "death": null,
@@ -5556,7 +6042,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1782,
+    "id": 1982,
     "name": "Poppy Pomfrey",
     "birth": "pre 1954",
     "death": null,
@@ -5577,7 +6063,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 1784,
+    "id": 1984,
     "name": "Roddy Pontner",
     "birth": null,
     "death": null,
@@ -5592,310 +6078,9 @@
     "books_featured_in": [4]
   },
   {
-    "id": 1822,
-    "name": "Gaspard Shingleton",
-    "birth": "1959",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": "Silver",
-    "eye_color": "Green",
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": [],
-    "books_featured_in": [1]
-  },
-  {
-    "id": 1825,
-    "name": "Stanley Shunpike",
-    "birth": "Between 15 September 1974 and 13 September 1975",
-    "death": null,
-    "ancestry": "Pure-blood or Half-Blood",
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": "Non-corporeal",
-    "house": null,
-    "associated_groups": ["Knight Bus", "Death Eaters (Imperiused)"],
-    "books_featured_in": [3, 4, 5, 6, 7]
-  },
-  {
-    "id": 1831,
-    "name": "Mylor Silvanus",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": [],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1836,
-    "name": "Aurora Sinistra",
-    "birth": "Pre 1968",
-    "death": null,
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": "Dark",
-    "eye_color": "Dark",
-    "wand": null,
-    "patronus": "Non-corporeal",
-    "house": null,
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Astronomy department"],
-    "books_featured_in": [2, 4, 5]
-  },
-  {
-    "id": 1837,
-    "name": "Rita Skeeter",
-    "birth": "between January and November 1951",
-    "death": null,
-    "ancestry": "Pure-blood or half-blood (possibly)",
-    "gender": "Female",
-    "hair_color": "Blonde",
-    "eye_color": "Green",
-    "wand": "Unknown length, wood and core",
-    "patronus": "Non-corporeal",
-    "house": null,
-    "associated_groups": ["Daily Prophet", "Witch Weekly", "The Quibbler", "Order of the Phoenix (indirectly)"],
-    "books_featured_in": [4, 5, 6, 7]
-  },
-  {
-    "id": 1844,
-    "name": "Wilbert Slinkhard",
-    "birth": "Prior to 1978",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Slinkhard family"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1845,
-    "name": "Jack Sloper",
-    "birth": "c. Pre 31 August 1984",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Gryffindor",
-    "associated_groups": [
-      "Sloper family",
-      "Hogwarts School of Witchcraft and Wizardry",
-      "Gryffindor",
-      "Gryffindor Quidditch team"
-    ],
-    "books_featured_in": [5, 6]
-  },
-  {
-    "id": 1853,
-    "name": "Sixth-Year Inquisitorial Squad Member",
-    "birth": "between 1 September 1978 and 31 August 1979, (most likely) Great Britain or Ireland",
-    "death": null,
-    "ancestry": "Pure-blood or Half-blood (likely)",
-    "gender": "Female",
-    "hair_color": "Dark",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Slytherin",
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Slytherin", "Inquisitorial Squad (formerly)"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1860,
-    "name": "Enid Smeek",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Godric's Hollow", "Rita Skeeter"],
-    "books_featured_in": [7]
-  },
-  {
-    "id": 1861,
-    "name": "Veronica Smethley",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Gilderoy Lockhart"],
-    "books_featured_in": [2]
-  },
-  {
-    "id": 1863,
-    "name": "Hippocrates Smethwyck",
-    "birth": "before 1977",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["St Mungo's Hospital for Magical Maladies and Injuries", "Smethwyck family"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1866,
-    "name": "Hepzibah Smith",
-    "birth": null,
-    "death": "c. 1955-1961",
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Hufflepuff family"],
-    "books_featured_in": [6, 7]
-  },
-  {
-    "id": 1868,
-    "name": "Zacharias Smith",
-    "birth": "between 1 September 1979 and 2 May 1981 (possibly)",
-    "death": null,
-    "ancestry": "Pure-blood or half-blood",
-    "gender": "Male",
-    "hair_color": "Blond",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Hufflepuff",
-    "associated_groups": [
-      "Smith family",
-      "Dumbledore's Army (abandoned)",
-      "Hogwarts School of Witchcraft and Wizardry (abandoned)",
-      "Hufflepuff",
-      "Hufflepuff Quidditch team"
-    ],
-    "books_featured_in": [5, 6, 7]
-  },
-  {
-    "id": 1873,
-    "name": "Unidentified Snatcher",
-    "birth": null,
-    "death": "March, 1998 (possibly)",
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": "Brown",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Snatchers"],
-    "books_featured_in": [7]
-  },
-  {
-    "id": 1874,
-    "name": "Unidentified Snatcher (II)",
-    "birth": null,
-    "death": null,
-    "ancestry": "Half-blood or pure blood",
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Snatchers"],
-    "books_featured_in": [7]
-  },
-  {
-    "id": 1886,
-    "name": "Spellman",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": null,
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": [],
-    "books_featured_in": [5, 6, 7]
-  },
-  {
-    "id": 1893,
-    "name": "Alicia Spinnet",
-    "birth": "between 1 September 1977 and 31 August 1978",
-    "death": null,
-    "ancestry": "Pure-blood or half-blood (possibly)",
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Gryffindor",
-    "associated_groups": [
-      "Hogwarts School of Witchcraft and Wizardry",
-      "Gryffindor",
-      "Gryffindor Quidditch team",
-      "Dumbledore's Army"
-    ],
-    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
-  },
-  {
-    "id": 1895,
-    "name": "Phyllida Spore",
-    "birth": null,
-    "death": "In or before 1995",
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": "Black",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
-    "books_featured_in": [1]
-  },
-  {
-    "id": 1907,
-    "name": "Winged St Mungo's patient",
-    "birth": null,
-    "death": null,
-    "ancestry": "Magical to unknown extent",
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["St Mungo's Hospital for Magical Maladies and Injuries"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1918,
-    "name": "Stebbins (Marauder-era)",
-    "birth": "between 1 September 1959 and 31 August 1960,",
+    "id": 2014,
+    "name": "James Potter II's friends",
+    "birth": "Between 1 September, 1999 and 31 August, 2006",
     "death": null,
     "ancestry": null,
     "gender": null,
@@ -5905,256 +6090,757 @@
     "patronus": null,
     "house": null,
     "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1919,
-    "name": "Stebbins (Potter-era)",
-    "birth": "c. 31 August 1980 or earlier, Great Britain or Ireland",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": "Blonde",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Hufflepuff",
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff"],
-    "books_featured_in": [4]
-  },
-  {
-    "id": 1926,
-    "name": "Patricia Stimpson",
-    "birth": "c. 1977-1978",
-    "death": null,
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1936,
-    "name": "Miriam Strout",
-    "birth": "Before 1977",
-    "death": null,
-    "ancestry": null,
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["St Mungo's Hospital for Magical Maladies and Injuries", "Janus Thickey Ward"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1944,
-    "name": "Summerby",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Hufflepuff",
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff", "Hufflepuff Quidditch team"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1946,
-    "name": "Summers",
-    "birth": "between 1 November 1977 and 31 August 1983,",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": "Hufflepuff",
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff"],
-    "books_featured_in": [4]
-  },
-  {
-    "id": 1954,
-    "name": "Emeric Switch",
-    "birth": null,
-    "death": "Before the 1990s (possibly)",
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": [],
-    "books_featured_in": [1]
-  },
-  {
-    "id": 1966,
-    "name": "Robertus Tallis",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": "Brown",
-    "eye_color": "Blue",
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": [],
-    "books_featured_in": [1]
-  },
-  {
-    "id": 1975,
-    "name": "Teffington",
-    "birth": null,
-    "death": "1 May, 1998",
-    "ancestry": "Pure-blood or half-blood",
-    "gender": "Male",
-    "hair_color": "Dark",
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Gringotts Wizarding Bank"],
     "books_featured_in": [7]
   },
   {
-    "id": 1982,
-    "name": "Theodore Nott's mother",
-    "birth": null,
-    "death": "Sometime between 1980 and 1995",
-    "ancestry": "Pure-blood or Half-blood",
-    "gender": "Female",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Nott family"],
-    "books_featured_in": [5, 6]
-  },
-  {
-    "id": 1984,
-    "name": "Janus Thickey",
-    "birth": null,
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Landlady of the Green Dragon pub"],
-    "books_featured_in": [5]
-  },
-  {
-    "id": 1986,
-    "name": "Pius Thicknesse",
-    "birth": "Pre-1980",
-    "death": null,
-    "ancestry": "Pure-blood or half-blood (most likely)",
-    "gender": "Male",
-    "hair_color": "Black and silver",
-    "eye_color": null,
-    "wand": "Unknown length, wood and core",
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["British Ministry of Magic", "Department of Magical Law Enforcement", "Death Eaters (Imperiused)"],
-    "books_featured_in": [7]
-  },
-  {
-    "id": 1989,
-    "name": "Thomas Vace",
-    "birth": "Before 1993",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
-    "patronus": null,
-    "house": null,
-    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
-    "books_featured_in": [3]
-  },
-  {
-    "id": 1990,
-    "name": "Dean Thomas",
-    "birth": "between 1 September 1979 and 31 August 1980",
+    "id": 2016,
+    "name": "Albus Potter",
+    "birth": "Between 1 September 2005 and 31 August 2006",
     "death": null,
     "ancestry": "Half-blood",
     "gender": "Male",
-    "hair_color": "Black",
-    "eye_color": "Brown",
-    "wand": "Unknown 1st wand",
-    "patronus": "Non-corporeal",
-    "house": "Gryffindor",
-    "associated_groups": [
-      "Thomas family",
-      "Hogwarts School of Witchcraft and Wizardry",
-      "Gryffindor",
-      "Gryffindor Quidditch team",
-      "Dumbledore's Army"
-    ],
-    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
-  },
-  {
-    "id": 1991,
-    "name": "Dean Thomas's father",
-    "birth": null,
-    "death": "c. 1980",
-    "ancestry": "Pure-blood or half-blood (likely)",
-    "gender": "Male",
-    "hair_color": null,
-    "eye_color": null,
-    "wand": null,
+    "hair_color": "Jet-black",
+    "eye_color": "Bright green",
+    "wand": "Unknown length, wood and core",
     "patronus": null,
-    "house": null,
-    "associated_groups": [],
+    "house": "Slytherin",
+    "associated_groups": ["Potter family", "Weasley family", "Hogwarts School of Witchcraft and Wizardry", "Slytherin"],
     "books_featured_in": [7]
   },
   {
-    "id": 1998,
-    "name": "Orsino Thruston",
-    "birth": "1976",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
-    "hair_color": "Bald",
-    "eye_color": null,
-    "wand": null,
-    "patronus": "Non-corporeal",
-    "house": null,
-    "associated_groups": ["Weird Sisters"],
-    "books_featured_in": [4]
-  },
-  {
-    "id": 2000,
-    "name": "Tiberius",
-    "birth": "c. 1970 or earlier",
-    "death": null,
-    "ancestry": null,
-    "gender": "Male",
+    "id": 2018,
+    "name": "Euphemia Potter",
+    "birth": null,
+    "death": "Pre-31 July, 1980",
+    "ancestry": "Pure-blood",
+    "gender": "Female",
     "hair_color": null,
     "eye_color": null,
     "wand": null,
     "patronus": null,
     "house": null,
-    "associated_groups": ["Slug Club (formerly)", "Ministry of Magic", "McLaggen family"],
-    "books_featured_in": [6]
+    "associated_groups": ["Potter family"],
+    "books_featured_in": [1, 5]
+  },
+  {
+    "id": 2019,
+    "name": "Fleamont Potter",
+    "birth": "Pre-1909",
+    "death": "c. 1979",
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Potter family",
+      "Peverell family",
+      "Fleamont family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor"
+    ],
+    "books_featured_in": [1, 5, 7]
+  },
+  {
+    "id": 2020,
+    "name": "Harry Potter",
+    "birth": "31 July, 1980",
+    "death": null,
+    "ancestry": "Half-blood",
+    "gender": "Male",
+    "hair_color": "Jet-black",
+    "eye_color": "Bottle green",
+    "wand": "11\", Holly, phoenix feather",
+    "patronus": "Stag",
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Potter family",
+      "Weasley family",
+      "Albus Dumbledore",
+      "Dumbledore's Army",
+      "Order of the Phoenix",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor",
+      "Gryffindor Quidditch team",
+      "Slug Club",
+      "British Ministry of Magic",
+      "Auror Office",
+      "Department of Magical Law Enforcement",
+      "S.P.E.W."
+    ],
+    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
     "id": 2022,
+    "name": "James Potter I",
+    "birth": "27 March, 1960",
+    "death": "31 October, 1981 (aged 21)",
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Jet-black",
+    "eye_color": "Hazel",
+    "wand": "11\", Mahogany, unknown core",
+    "patronus": "Stag",
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Potter family",
+      "Evans family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Marauders",
+      "Gryffindor",
+      "Gryffindor Quidditch team",
+      "Order of the Phoenix"
+    ],
+    "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 2023,
+    "name": "James Potter II",
+    "birth": "Between 1 September 2003 and 31 August 2004",
+    "death": null,
+    "ancestry": "Half-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": ["Potter family", "Weasley family", "Hogwarts School of Witchcraft and Wizardry", "Gryffindor"],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2024,
+    "name": "Lily L. Potter",
+    "birth": "Between 1 September 2007 and 31 August 2008",
+    "death": null,
+    "ancestry": "Half-blood",
+    "gender": "Female",
+    "hair_color": "Red",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": [
+      "Potter family",
+      "Weasley family",
+      "Prewett family",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Gryffindor"
+    ],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2027,
+    "name": "Ernest Prang",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "White",
+    "eye_color": null,
+    "wand": null,
+    "patronus": "None",
+    "house": null,
+    "associated_groups": ["Knight Bus", "Albus Dumbledore"],
+    "books_featured_in": [3, 5, 6]
+  },
+  {
+    "id": 2032,
+    "name": "Fabian Prewett",
+    "birth": null,
+    "death": "1981",
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Red",
+    "eye_color": "Grey",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Prewett family", "Order of the Phoenix"],
+    "books_featured_in": [1, 5, 7]
+  },
+  {
+    "id": 2033,
+    "name": "Gideon Prewett",
+    "birth": null,
+    "death": "1981",
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Red",
+    "eye_color": "Dark grey",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Prewett family", "Order of the Phoenix"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2035,
+    "name": "Molly Weasley's father",
+    "birth": "before 1932 (most likely)",
+    "death": null,
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Red (possibly)",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Prewett family"],
+    "books_featured_in": [1, 5]
+  },
+  {
+    "id": 2036,
+    "name": "Molly Weasley's mother",
+    "birth": "before 30 October, 1949.",
+    "death": null,
+    "ancestry": "Pure-blood",
+    "gender": "Female",
+    "hair_color": "Red (possibly)",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Prewett family"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2041,
+    "name": "Eileen Prince",
+    "birth": "c. 1930, Great Britain or Ireland",
+    "death": null,
+    "ancestry": "Pure-blood (possibly)",
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Slytherin (possibly)",
+    "associated_groups": ["Prince family", "Snape family", "Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [5, 6, 7]
+  },
+  {
+    "id": 2043,
+    "name": "Apollyon Pringle",
+    "birth": "pre 1944",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 2044,
+    "name": "Graham Pritchard",
+    "birth": "between 1 September 1982 and 31 August 1983, Great Britain or Ireland",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Slytherin",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Slytherin"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 2046,
+    "name": "Demetrius Prod",
+    "birth": "Prior to 1992",
+    "death": "27 November, 1998",
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Kwikspell"],
+    "books_featured_in": [2]
+  },
+  {
+    "id": 2047,
+    "name": "Elsie Prod",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [2]
+  },
+  {
+    "id": 2049,
+    "name": "Proudfoot",
+    "birth": "before 1976",
+    "death": null,
+    "ancestry": null,
+    "gender": null,
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Ministry of Magic"],
+    "books_featured_in": [6]
+  },
+  {
+    "id": 2051,
+    "name": "Ptolemy",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Grey",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 2052,
+    "name": "Adrian Pucey",
+    "birth": "between 1 September 1977 and 31 August 1978",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Black",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Slytherin",
+    "associated_groups": ["Pucey family", "Hogwarts School of Witchcraft and Wizardry", "Slytherin Quidditch team", "Slytherin"],
+    "books_featured_in": [1, 2, 3, 5]
+  },
+  {
+    "id": 2054,
+    "name": "Puddifoot",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Black",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Madam Puddifoot's Tea Shop"],
+    "books_featured_in": [5, 6, 7]
+  },
+  {
+    "id": 2060,
+    "name": "Doris Purkiss",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["The Quibbler (presumed)"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2062,
+    "name": "Augustus Pye",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["St Mungo's"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2064,
+    "name": "Pyrites",
+    "birth": "Before 1981",
+    "death": null,
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Death Eaters", "Lord Voldemort", "Pyrites family"],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 2065,
+    "name": "Argo Pyrites",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Pyrites family"],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 2071,
+    "name": "Unidentified Quidditch referee",
+    "birth": null,
+    "death": "After 1357",
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Brown",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [1]
+  },
+  {
+    "id": 2073,
+    "name": "Quigley",
+    "birth": "before 1977, Ireland",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Irish National Quidditch team"],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 2078,
+    "name": "Orla Quirke",
+    "birth": "between 1 September 1982 and 31 August 1983,",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Ravenclaw",
+    "associated_groups": [],
+    "books_featured_in": [4]
+  },
+  {
+    "id": 2084,
+    "name": "Urquhart Rackharrow",
+    "birth": "1612",
+    "death": "1697 (aged 84 - 85)",
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["St Mungo's Hospital for Magical Maladies and Injuries"],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2095,
+    "name": "Unidentified Ravenclaw boy",
+    "birth": "between 1 September 1985 and 31 August 1986",
+    "death": null,
+    "ancestry": "Either Pure-blood or Half-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2100,
+    "name": "Helena Ravenclaw",
+    "birth": "Post 982",
+    "death": "Sometime between 996 and 1000",
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Female",
+    "hair_color": "Black",
+    "eye_color": "Grey",
+    "wand": null,
+    "patronus": null,
+    "house": "Ravenclaw",
+    "associated_groups": ["Ravenclaw family", "Hogwarts School of Witchcraft and Wizardry", "Ravenclaw"],
+    "books_featured_in": [1, 6, 7]
+  },
+  {
+    "id": 2101,
+    "name": "Rowena Ravenclaw",
+    "birth": "Pre 976",
+    "death": "11th century",
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": "Ravenclaw",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Ravenclaw", "Ravenclaw family"],
+    "books_featured_in": [2, 4, 5, 7]
+  },
+  {
+    "id": 2115,
+    "name": "Maisy Reynolds",
+    "birth": "on or prior to 31 August 1986,",
+    "death": null,
+    "ancestry": "Pure-blood or Half-blood",
+    "gender": "Female",
+    "hair_color": "Brown",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Ravenclaw",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Ravenclaw"],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2120,
+    "name": "Merope Riddle",
+    "birth": "c. 1907",
+    "death": "31 December, 1926 (aged 19)",
+    "ancestry": "Pure-blood",
+    "gender": "Female",
+    "hair_color": "Dull",
+    "eye_color": null,
+    "wand": "Unknown length, wood and core",
+    "patronus": null,
+    "house": "House of Gaunt (abandoned)",
+    "associated_groups": [],
+    "books_featured_in": [2, 4, 5, 6, 7]
+  },
+  {
+    "id": 2123,
+    "name": "Gawain Robards",
+    "birth": "Pre. 1969",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["British Ministry of Magic", "Department of Magical Law Enforcement", "Auror Office"],
+    "books_featured_in": [6]
+  },
+  {
+    "id": 2124,
+    "name": "Demelza Robins",
+    "birth": "on or before 31 August 1985",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": "Gryffindor",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Gryffindor", "Gryffindor Quidditch team"],
+    "books_featured_in": [6]
+  },
+  {
+    "id": 2137,
+    "name": "Rosmerta",
+    "birth": "Before 1959",
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Blonde",
+    "eye_color": "Green",
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": ["Three Broomsticks Inn", "Draco Malfoy (while under the Imperius Curse)"],
+    "books_featured_in": [3, 4, 6]
+  },
+  {
+    "id": 2154,
+    "name": "Albert Runcorn",
+    "birth": "Runcorn family",
+    "death": null,
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Black",
+    "eye_color": "Dark",
+    "wand": null,
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2156,
+    "name": "Barry Ryan",
+    "birth": "before 1977, Ireland",
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Irish National Quidditch team"],
+    "books_featured_in": [4, 5]
+  },
+  {
+    "id": 2171,
+    "name": "Savage",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": null,
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": ["Ministry of Magic"],
+    "books_featured_in": [6]
+  },
+  {
+    "id": 2177,
+    "name": "Scabior",
+    "birth": "before 1980 (most likely)",
+    "death": "2 May, 1998",
+    "ancestry": "Pure-blood or half-blood",
+    "gender": "Male",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": "Unknown length, wood and core",
+    "patronus": "None",
+    "house": "Slytherin",
+    "associated_groups": ["Hogwarts School of Witchcraft and Wizardry (formerly)", "Slytherin", "Azkaban", "Snatchers"],
+    "books_featured_in": [7]
+  },
+  {
+    "id": 2185,
+    "name": "Scarpin",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": null,
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [6]
+  },
+  {
+    "id": 2189,
+    "name": "Skower",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": "Blonde",
+    "eye_color": "Green",
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [2, 4]
+  },
+  {
+    "id": 2191,
+    "name": "Rufus Scrimgeour",
+    "birth": "Pre 1968",
+    "death": "1 August, 1997",
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Tawny",
+    "eye_color": "Yellowish",
+    "wand": "Unknown length, wood and core",
+    "patronus": "Non-corporeal",
+    "house": null,
+    "associated_groups": ["British Ministry of Magic", "Auror Office"],
+    "books_featured_in": [5, 6, 7]
+  },
+  {
+    "id": 2196,
+    "name": "Unidentified female Seer",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Female",
+    "hair_color": null,
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2197,
+    "name": "Unidentified male Seer",
+    "birth": null,
+    "death": null,
+    "ancestry": null,
+    "gender": "Male",
+    "hair_color": "Unknown, bearded",
+    "eye_color": null,
+    "wand": null,
+    "patronus": null,
+    "house": null,
+    "associated_groups": [],
+    "books_featured_in": [5]
+  },
+  {
+    "id": 2199,
+    "name": "Kingsley Shacklebolt",
+    "birth": "In or before 1960",
+    "death": null,
+    "ancestry": "Pure-blood",
+    "gender": "Male",
+    "hair_color": "Bald",
+    "eye_color": "Black",
+    "wand": "Unknown length, wood and core",
+    "patronus": "Lynx",
+    "house": null,
+    "associated_groups": [
+      "Shacklebolt family",
+      "British Ministry of Magic",
+      "Auror Department (formerly)",
+      "Order of the Phoenix",
+      "Advance Guard",
+      "Hogwarts School of Witchcraft and Wizardry",
+      "Potterwatch"
+    ],
+    "books_featured_in": [5, 6, 7]
+  },
+  {
+    "id": 2222,
     "name": "Gaspard Shingleton",
     "birth": "1959",
     "death": null,
@@ -6169,7 +6855,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2025,
+    "id": 2225,
     "name": "Stanley Shunpike",
     "birth": "Between 15 September 1974 and 13 September 1975",
     "death": null,
@@ -6184,7 +6870,7 @@
     "books_featured_in": [3, 4, 5, 6, 7]
   },
   {
-    "id": 2031,
+    "id": 2231,
     "name": "Mylor Silvanus",
     "birth": null,
     "death": null,
@@ -6199,7 +6885,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2036,
+    "id": 2236,
     "name": "Aurora Sinistra",
     "birth": "Pre 1968",
     "death": null,
@@ -6214,7 +6900,7 @@
     "books_featured_in": [2, 4, 5]
   },
   {
-    "id": 2037,
+    "id": 2237,
     "name": "Rita Skeeter",
     "birth": "between January and November 1951",
     "death": null,
@@ -6229,7 +6915,7 @@
     "books_featured_in": [4, 5, 6, 7]
   },
   {
-    "id": 2044,
+    "id": 2244,
     "name": "Wilbert Slinkhard",
     "birth": "Prior to 1978",
     "death": null,
@@ -6244,7 +6930,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2045,
+    "id": 2245,
     "name": "Jack Sloper",
     "birth": "c. Pre 31 August 1984",
     "death": null,
@@ -6264,7 +6950,7 @@
     "books_featured_in": [5, 6]
   },
   {
-    "id": 2053,
+    "id": 2253,
     "name": "Sixth-Year Inquisitorial Squad Member",
     "birth": "between 1 September 1978 and 31 August 1979, (most likely) Great Britain or Ireland",
     "death": null,
@@ -6279,7 +6965,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2060,
+    "id": 2260,
     "name": "Enid Smeek",
     "birth": null,
     "death": null,
@@ -6294,7 +6980,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2061,
+    "id": 2261,
     "name": "Veronica Smethley",
     "birth": null,
     "death": null,
@@ -6309,7 +6995,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 2063,
+    "id": 2263,
     "name": "Hippocrates Smethwyck",
     "birth": "before 1977",
     "death": null,
@@ -6324,7 +7010,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2066,
+    "id": 2266,
     "name": "Hepzibah Smith",
     "birth": null,
     "death": "c. 1955-1961",
@@ -6339,7 +7025,7 @@
     "books_featured_in": [6, 7]
   },
   {
-    "id": 2068,
+    "id": 2268,
     "name": "Zacharias Smith",
     "birth": "between 1 September 1979 and 2 May 1981 (possibly)",
     "death": null,
@@ -6360,7 +7046,7 @@
     "books_featured_in": [5, 6, 7]
   },
   {
-    "id": 2073,
+    "id": 2273,
     "name": "Unidentified Snatcher",
     "birth": null,
     "death": "March, 1998 (possibly)",
@@ -6375,7 +7061,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2074,
+    "id": 2274,
     "name": "Unidentified Snatcher (II)",
     "birth": null,
     "death": null,
@@ -6390,7 +7076,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2086,
+    "id": 2286,
     "name": "Spellman",
     "birth": null,
     "death": null,
@@ -6405,7 +7091,7 @@
     "books_featured_in": [5, 6, 7]
   },
   {
-    "id": 2093,
+    "id": 2293,
     "name": "Alicia Spinnet",
     "birth": "between 1 September 1977 and 31 August 1978",
     "death": null,
@@ -6425,7 +7111,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2095,
+    "id": 2295,
     "name": "Phyllida Spore",
     "birth": null,
     "death": "In or before 1995",
@@ -6440,7 +7126,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2107,
+    "id": 2307,
     "name": "Winged St Mungo's patient",
     "birth": null,
     "death": null,
@@ -6455,7 +7141,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2118,
+    "id": 2318,
     "name": "Stebbins (Marauder-era)",
     "birth": "between 1 September 1959 and 31 August 1960,",
     "death": null,
@@ -6470,7 +7156,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2119,
+    "id": 2319,
     "name": "Stebbins (Potter-era)",
     "birth": "c. 31 August 1980 or earlier, Great Britain or Ireland",
     "death": null,
@@ -6485,7 +7171,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2126,
+    "id": 2326,
     "name": "Patricia Stimpson",
     "birth": "c. 1977-1978",
     "death": null,
@@ -6500,7 +7186,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2136,
+    "id": 2336,
     "name": "Miriam Strout",
     "birth": "Before 1977",
     "death": null,
@@ -6515,7 +7201,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2144,
+    "id": 2344,
     "name": "Summerby",
     "birth": null,
     "death": null,
@@ -6530,7 +7216,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2146,
+    "id": 2346,
     "name": "Summers",
     "birth": "between 1 November 1977 and 31 August 1983,",
     "death": null,
@@ -6545,7 +7231,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2154,
+    "id": 2354,
     "name": "Emeric Switch",
     "birth": null,
     "death": "Before the 1990s (possibly)",
@@ -6560,7 +7246,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2166,
+    "id": 2366,
     "name": "Robertus Tallis",
     "birth": null,
     "death": null,
@@ -6575,7 +7261,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2175,
+    "id": 2375,
     "name": "Teffington",
     "birth": null,
     "death": "1 May, 1998",
@@ -6590,7 +7276,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2182,
+    "id": 2382,
     "name": "Theodore Nott's mother",
     "birth": null,
     "death": "Sometime between 1980 and 1995",
@@ -6605,7 +7291,7 @@
     "books_featured_in": [5, 6]
   },
   {
-    "id": 2184,
+    "id": 2384,
     "name": "Janus Thickey",
     "birth": null,
     "death": null,
@@ -6620,7 +7306,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2186,
+    "id": 2386,
     "name": "Pius Thicknesse",
     "birth": "Pre-1980",
     "death": null,
@@ -6635,7 +7321,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2189,
+    "id": 2389,
     "name": "Thomas Vace",
     "birth": "Before 1993",
     "death": null,
@@ -6650,7 +7336,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 2190,
+    "id": 2390,
     "name": "Dean Thomas",
     "birth": "between 1 September 1979 and 31 August 1980",
     "death": null,
@@ -6671,7 +7357,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2191,
+    "id": 2391,
     "name": "Dean Thomas's father",
     "birth": null,
     "death": "c. 1980",
@@ -6686,7 +7372,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2198,
+    "id": 2398,
     "name": "Orsino Thruston",
     "birth": "1976",
     "death": null,
@@ -6701,7 +7387,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2200,
+    "id": 2400,
     "name": "Tiberius",
     "birth": "c. 1970 or earlier",
     "death": null,
@@ -6716,7 +7402,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2206,
+    "id": 2406,
     "name": "Agatha Timms",
     "birth": null,
     "death": null,
@@ -6731,7 +7417,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2207,
+    "id": 2407,
     "name": "Timothy Butler",
     "birth": "31 August 1982 or earlier",
     "death": null,
@@ -6746,7 +7432,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 2215,
+    "id": 2415,
     "name": "Tofty",
     "birth": "Before 1972",
     "death": null,
@@ -6761,7 +7447,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2217,
+    "id": 2417,
     "name": "Tom",
     "birth": "c. 1920 or earlier",
     "death": null,
@@ -6776,7 +7462,7 @@
     "books_featured_in": [1, 3, 6, 7]
   },
   {
-    "id": 2220,
+    "id": 2420,
     "name": "Andromeda Tonks",
     "birth": "1951-1955",
     "death": null,
@@ -6791,7 +7477,7 @@
     "books_featured_in": [5, 7]
   },
   {
-    "id": 2221,
+    "id": 2421,
     "name": "Edward Tonks",
     "birth": null,
     "death": "March, 1998",
@@ -6806,7 +7492,7 @@
     "books_featured_in": [5, 7]
   },
   {
-    "id": 2222,
+    "id": 2422,
     "name": "Nymphadora Tonks",
     "birth": "between 1 September 1972 and 31 August 1973",
     "death": "2 May, 1998 (aged 24/25)",
@@ -6831,7 +7517,7 @@
     "books_featured_in": [5, 6, 7]
   },
   {
-    "id": 2226,
+    "id": 2426,
     "name": "Kenneth Towler",
     "birth": "between 1 September 1977 and 31 August 1978 (probably)",
     "death": null,
@@ -6846,7 +7532,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2234,
+    "id": 2434,
     "name": "Cassandra Trelawney",
     "birth": null,
     "death": null,
@@ -6861,7 +7547,7 @@
     "books_featured_in": [5, 6]
   },
   {
-    "id": 2235,
+    "id": 2435,
     "name": "Sybill Trelawney",
     "birth": "9 March, prior to 1963, Great Britain or Ireland",
     "death": null,
@@ -6884,7 +7570,7 @@
     "books_featured_in": [3, 4, 5, 6, 7]
   },
   {
-    "id": 2240,
+    "id": 2440,
     "name": "Donaghan Tremlett",
     "birth": "1972,",
     "death": null,
@@ -6899,7 +7585,7 @@
     "books_featured_in": [4, 5, 6]
   },
   {
-    "id": 2243,
+    "id": 2443,
     "name": "Quentin Trimble",
     "birth": null,
     "death": "In or before 1986",
@@ -6914,7 +7600,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2247,
+    "id": 2447,
     "name": "Trolley witch",
     "birth": "Before 1830",
     "death": null,
@@ -6929,7 +7615,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2248,
+    "id": 2448,
     "name": "Troy",
     "birth": "before 1977",
     "death": null,
@@ -6944,7 +7630,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2263,
+    "id": 2463,
     "name": "Lisa Turpin",
     "birth": "Between 1 September 1979 and 31 August 1980",
     "death": null,
@@ -6959,7 +7645,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2264,
+    "id": 2464,
     "name": "Tut",
     "birth": null,
     "death": null,
@@ -6974,7 +7660,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2273,
+    "id": 2473,
     "name": "Twinkle",
     "birth": null,
     "death": null,
@@ -6989,7 +7675,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2274,
+    "id": 2474,
     "name": "Two little witches",
     "birth": "Before 1994",
     "death": null,
@@ -7004,7 +7690,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2277,
+    "id": 2477,
     "name": "Wilkie Twycross",
     "birth": "Before 1979",
     "death": null,
@@ -7019,7 +7705,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2280,
+    "id": 2480,
     "name": "Tyra Teegarden",
     "birth": "31 August 1982 or earlier",
     "death": null,
@@ -7034,7 +7720,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 2282,
+    "id": 2482,
     "name": "Ubbly",
     "birth": null,
     "death": null,
@@ -7049,7 +7735,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2284,
+    "id": 2484,
     "name": "Dolores Umbridge",
     "birth": "British Ministry of Magic (formerly)",
     "death": null,
@@ -7064,7 +7750,7 @@
     "books_featured_in": [5, 6, 7]
   },
   {
-    "id": 2300,
+    "id": 2500,
     "name": "Unidentified Ballycastle Bats Chaser",
     "birth": null,
     "death": null,
@@ -7079,7 +7765,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2302,
+    "id": 2502,
     "name": "Unidentified Beauxbatons students",
     "birth": null,
     "death": null,
@@ -7094,7 +7780,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2334,
+    "id": 2534,
     "name": "Unidentified frizzy-haired Wizengamot member",
     "birth": null,
     "death": null,
@@ -7109,7 +7795,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2340,
+    "id": 2540,
     "name": "Unidentified grubby-looking wizard",
     "birth": null,
     "death": null,
@@ -7124,7 +7810,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2374,
+    "id": 2574,
     "name": "Unidentified Magical Maintenance wizard",
     "birth": null,
     "death": null,
@@ -7139,7 +7825,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2389,
+    "id": 2589,
     "name": "Unidentified Obliviator",
     "birth": null,
     "death": null,
@@ -7154,7 +7840,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2392,
+    "id": 2592,
     "name": "Unidentified pamphlet maker witch",
     "birth": null,
     "death": null,
@@ -7169,7 +7855,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2430,
+    "id": 2630,
     "name": "Unidentified Snatcher (III)",
     "birth": null,
     "death": null,
@@ -7184,7 +7870,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2439,
+    "id": 2639,
     "name": "Unidentified werewolf",
     "birth": null,
     "death": null,
@@ -7199,7 +7885,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2447,
+    "id": 2647,
     "name": "Uric the Oddball",
     "birth": "982 or later, Great Britain or Ireland",
     "death": "Middle Ages",
@@ -7214,7 +7900,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2449,
+    "id": 2649,
     "name": "Urquhart",
     "birth": "31 August 1984 or earlier",
     "death": null,
@@ -7229,7 +7915,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2450,
+    "id": 2650,
     "name": "Cassandra Vablatsky",
     "birth": "1894",
     "death": "1997 (aged 102 - 103)",
@@ -7244,7 +7930,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 2451,
+    "id": 2651,
     "name": "Vaisey",
     "birth": "31 August 1984 or earlier",
     "death": null,
@@ -7259,7 +7945,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2455,
+    "id": 2655,
     "name": "Emmeline Vance",
     "birth": "pre 1964",
     "death": "Early July, 1996",
@@ -7274,7 +7960,7 @@
     "books_featured_in": [5, 6]
   },
   {
-    "id": 2457,
+    "id": 2657,
     "name": "Romilda Vane",
     "birth": "between 1 September 1981 and 31 August 1982",
     "death": null,
@@ -7289,7 +7975,7 @@
     "books_featured_in": [4, 6]
   },
   {
-    "id": 2461,
+    "id": 2661,
     "name": "Septima Vector",
     "birth": "Before 1974",
     "death": null,
@@ -7304,7 +7990,7 @@
     "books_featured_in": [3, 4, 5, 6]
   },
   {
-    "id": 2462,
+    "id": 2662,
     "name": "Verity",
     "birth": "In or prior to 1979",
     "death": null,
@@ -7319,7 +8005,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2465,
+    "id": 2665,
     "name": "Viktor Krum's father",
     "birth": "In or before 1945 (possibly)",
     "death": null,
@@ -7334,7 +8020,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2466,
+    "id": 2666,
     "name": "Viktor Krum's grandfather",
     "birth": null,
     "death": "Pre-1945",
@@ -7349,7 +8035,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2467,
+    "id": 2667,
     "name": "Viktor Krum's mother",
     "birth": "In or before 1945 (possibly)",
     "death": null,
@@ -7364,7 +8050,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2469,
+    "id": 2669,
     "name": "Violet",
     "birth": null,
     "death": "Before 1994",
@@ -7379,7 +8065,7 @@
     "books_featured_in": [4, 6]
   },
   {
-    "id": 2470,
+    "id": 2670,
     "name": "Violet-cloaked wizard",
     "birth": null,
     "death": null,
@@ -7394,7 +8080,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2471,
+    "id": 2671,
     "name": "Vindictus Viridian",
     "birth": "Pre 1686 (most likely)",
     "death": "In or before 1994",
@@ -7409,7 +8095,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2474,
+    "id": 2674,
     "name": "Ivan Volkov",
     "birth": null,
     "death": null,
@@ -7424,7 +8110,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2478,
+    "id": 2678,
     "name": "Pyotr Vulchanov",
     "birth": "before 1977, Bulgaria",
     "death": null,
@@ -7439,7 +8125,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2483,
+    "id": 2683,
     "name": "Adalbert Waffling",
     "birth": "1899",
     "death": "1981 (aged 82)",
@@ -7454,7 +8140,7 @@
     "books_featured_in": [1, 3, 7]
   },
   {
-    "id": 2485,
+    "id": 2685,
     "name": "Myron Wagtail",
     "birth": "1970",
     "death": null,
@@ -7469,7 +8155,7 @@
     "books_featured_in": [4, 6]
   },
   {
-    "id": 2486,
+    "id": 2686,
     "name": "Wailing Widow",
     "birth": null,
     "death": "Before 1992",
@@ -7484,7 +8170,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 2492,
+    "id": 2692,
     "name": "Wakanda",
     "birth": null,
     "death": null,
@@ -7499,7 +8185,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2500,
+    "id": 2700,
     "name": "Wandless",
     "birth": null,
     "death": null,
@@ -7514,7 +8200,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2502,
+    "id": 2702,
     "name": "Celestina Warbeck",
     "birth": "18 August, 1917",
     "death": null,
@@ -7535,7 +8221,7 @@
     "books_featured_in": [2, 6, 7]
   },
   {
-    "id": 2511,
+    "id": 2711,
     "name": "Myrtle Warren",
     "birth": "Between 14 June, 1928 and 13 June, 1929",
     "death": "13 June, 1943 (aged 14)",
@@ -7558,7 +8244,7 @@
     "books_featured_in": [2, 4, 6]
   },
   {
-    "id": 2513,
+    "id": 2713,
     "name": "Cassius Warrington",
     "birth": "Between 1 September and 31 October 1977 (most likely)",
     "death": null,
@@ -7578,7 +8264,7 @@
     "books_featured_in": [3, 4, 5]
   },
   {
-    "id": 2517,
+    "id": 2717,
     "name": "Weasley children's cousin",
     "birth": null,
     "death": null,
@@ -7593,7 +8279,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2518,
+    "id": 2718,
     "name": "Weasley children's uncle",
     "birth": null,
     "death": null,
@@ -7608,7 +8294,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2519,
+    "id": 2719,
     "name": "Arthur Weasley",
     "birth": "6 February, 1950",
     "death": null,
@@ -7634,7 +8320,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2520,
+    "id": 2720,
     "name": "Arthur Weasley's brothers",
     "birth": "20th century",
     "death": null,
@@ -7649,7 +8335,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2521,
+    "id": 2721,
     "name": "Charles Weasley",
     "birth": "12 December, 1972",
     "death": null,
@@ -7673,7 +8359,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2523,
+    "id": 2723,
     "name": "Fred Weasley",
     "birth": "1 April, 1978",
     "death": "2 May, 1998 (aged 20)",
@@ -7699,7 +8385,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2525,
+    "id": 2725,
     "name": "George Weasley",
     "birth": "1 April, 1978",
     "death": null,
@@ -7724,7 +8410,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2526,
+    "id": 2726,
     "name": "Ginevra Weasley",
     "birth": "11 August, 1981",
     "death": null,
@@ -7751,7 +8437,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2527,
+    "id": 2727,
     "name": "Hugo Granger-Weasley",
     "birth": "1 September 2008 or later,",
     "death": null,
@@ -7766,7 +8452,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2529,
+    "id": 2729,
     "name": "Molly Weasley",
     "birth": "30 October, 1949 or 1950",
     "death": null,
@@ -7788,7 +8474,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2530,
+    "id": 2730,
     "name": "Percy Weasley",
     "birth": "22 August, 1976",
     "death": null,
@@ -7811,7 +8497,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2532,
+    "id": 2732,
     "name": "Rose Granger-Weasley",
     "birth": "between 1 September 2005 and 31 August 2006",
     "death": null,
@@ -7834,7 +8520,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2535,
+    "id": 2735,
     "name": "Victoire Weasley",
     "birth": "2 May, early 2000s Great Britain or France",
     "death": null,
@@ -7849,7 +8535,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2536,
+    "id": 2736,
     "name": "William Weasley",
     "birth": "29 November, 1970",
     "death": null,
@@ -7873,7 +8559,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2541,
+    "id": 2741,
     "name": "St Mungo's Welcome Witch",
     "birth": null,
     "death": null,
@@ -7888,7 +8574,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2542,
+    "id": 2742,
     "name": "Wendelin the Weird",
     "birth": "c. 14th century",
     "death": "Middle Ages",
@@ -7903,7 +8589,7 @@
     "books_featured_in": [3]
   },
   {
-    "id": 2553,
+    "id": 2753,
     "name": "Kevin Whitby",
     "birth": "between 1 September 1982 and 31 August 1983, Great Britain or Ireland",
     "death": null,
@@ -7918,7 +8604,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2560,
+    "id": 2760,
     "name": "Wilfred the Wistful",
     "birth": null,
     "death": null,
@@ -7933,7 +8619,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2567,
+    "id": 2767,
     "name": "Will",
     "birth": null,
     "death": null,
@@ -7948,7 +8634,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2570,
+    "id": 2770,
     "name": "William Weasley's Brazilian pen-friend",
     "birth": "before 1980s, South America",
     "death": null,
@@ -7963,7 +8649,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2574,
+    "id": 2774,
     "name": "Williamson",
     "birth": "Pre. 1973",
     "death": null,
@@ -7978,7 +8664,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2577,
+    "id": 2777,
     "name": "Willy Widdershins",
     "birth": null,
     "death": null,
@@ -7993,7 +8679,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2579,
+    "id": 2779,
     "name": "Gilbert Wimple",
     "birth": "Before 1976",
     "death": null,
@@ -8008,7 +8694,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2589,
+    "id": 2789,
     "name": "Herman Wintringham",
     "birth": "c. 1974",
     "death": null,
@@ -8023,7 +8709,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2594,
+    "id": 2794,
     "name": "Aged witch",
     "birth": null,
     "death": null,
@@ -8038,7 +8724,7 @@
     "books_featured_in": [2]
   },
   {
-    "id": 2604,
+    "id": 2804,
     "name": "Wizardkind",
     "birth": null,
     "death": null,
@@ -8053,7 +8739,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2611,
+    "id": 2811,
     "name": "Oliver Wood's father",
     "birth": "before 1975",
     "death": null,
@@ -8068,7 +8754,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2612,
+    "id": 2812,
     "name": "Oliver Wood's mother",
     "birth": null,
     "death": null,
@@ -8083,7 +8769,7 @@
     "books_featured_in": [4]
   },
   {
-    "id": 2613,
+    "id": 2813,
     "name": "Oliver Wood",
     "birth": "Between October 1975 - 31 August 1976",
     "death": null,
@@ -8105,7 +8791,7 @@
     "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
   },
   {
-    "id": 2615,
+    "id": 2815,
     "name": "Hengist of Woodcroft",
     "birth": "982 or later",
     "death": null,
@@ -8120,7 +8806,7 @@
     "books_featured_in": [1]
   },
   {
-    "id": 2618,
+    "id": 2818,
     "name": "Eldred Worple",
     "birth": "between 1914 and 1970 or earlier, Great Britain or Ireland",
     "death": null,
@@ -8135,7 +8821,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2621,
+    "id": 2821,
     "name": "Bowman Wright",
     "birth": "1492",
     "death": "1560 (aged 67-68)",
@@ -8150,7 +8836,7 @@
     "books_featured_in": [7]
   },
   {
-    "id": 2640,
+    "id": 2840,
     "name": "Blaise Zabini's mother",
     "birth": null,
     "death": null,
@@ -8165,7 +8851,7 @@
     "books_featured_in": [6]
   },
   {
-    "id": 2641,
+    "id": 2841,
     "name": "Blaise Zabini",
     "birth": "1 September, 1979 – 21 April, 1980",
     "death": null,
@@ -8187,7 +8873,7 @@
     "books_featured_in": [1, 6]
   },
   {
-    "id": 2644,
+    "id": 2844,
     "name": "Ladislaw Zamojski",
     "birth": null,
     "death": null,
@@ -8202,7 +8888,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2646,
+    "id": 2846,
     "name": "Rose Zeller",
     "birth": "Between 1 September 1983 and 31 August 1984,",
     "death": null,
@@ -8217,7 +8903,7 @@
     "books_featured_in": [5]
   },
   {
-    "id": 2648,
+    "id": 2848,
     "name": "Lev Zograf",
     "birth": null,
     "death": null,

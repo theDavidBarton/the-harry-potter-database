@@ -25,6 +25,18 @@ SOFTWARE.
 const puppeteer = require('puppeteer')
 const { charactersObj, browserWSEndpoint } = require('./dataCollectors')
 
+async function retry(promiseFactory, retryCount) {
+  try {
+    return await promiseFactory()
+  } catch (e) {
+    if (retryCount <= 0) {
+      console.log(retryCount + ' try left')
+      throw e
+    }
+    return await retry(promiseFactory, retryCount - 1)
+  }
+}
+
 // Uncle Bob Martin, please come & kill me!🧓
 async function characterCollector(index, url) {
   let idData = index
@@ -86,7 +98,7 @@ async function characterCollector(index, url) {
     }
   })
 
-  await page.goto(url)
+  await retry(() => page.goto(url), 5)
 
   // name of character
   nameData = await page.evaluate(el => el.innerText, (await page.$$('h1'))[0])
