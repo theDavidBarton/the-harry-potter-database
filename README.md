@@ -20,6 +20,12 @@
 
 /api/1/books/{id}
 
+`GET`
+
+/api/1/characters (optional parameter: search)
+
+/api/1/characters/{id}
+
 # Copyright
 
 The Harry Potter Database is a non-commercial open source project.

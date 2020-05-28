@@ -23,23 +23,53 @@ SOFTWARE.
 */
 
 const puppeteer = require('puppeteer')
-const generalUrlCollector = require('./generalUrlCollector')
+const fs = require('fs')
+
+const wikiaUrlBase = 'https://harrypotter.fandom.com/wiki/'
+const characterUrls = []
+const charactersObj = []
+
+let indexId = 1 // used as character ID
 
 async function dataCollectors() {
-  const browser = await puppeteer.launch({ headless: false })
+  const browser = await puppeteer.launch({ headless: true })
   const browserWSEndpoint = await browser.wsEndpoint()
-  // character wikia URL array:
-  const characterUrls = await generalUrlCollector('https://harrypotter.fandom.com/wiki/Category:Wizards', browserWSEndpoint)
-  console.log(characterUrls, browserWSEndpoint)
 
+  module.exports = { wikiaUrlBase, charactersObj, browserWSEndpoint }
+  const urlCollector = require('./urlCollector')
+  const characterCollector = require('./characterCollector')
+  const page = await browser.newPage()
+
+  // close cookie policy
+  try {
+    await page.goto(wikiaUrlBase)
+    await page.waitFor(10000)
+    const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
+    await getAcceptBtn[0].click()
+    await page.close()
+  } catch (e) {
+    console.error(e)
+    console.log('it wont work like this!')
+    process.exit(0)
+  }
+
+  await urlCollector('Category:Wizards', '?from=Wizard+who+claimed+to+be+a+dragon+killer', characterUrls, 'character')
+
+  // collect characters
   for (const pageUrl of characterUrls) {
     try {
-      console.log(pageUrl, browserWSEndpoint)
-      // await characterCollector(pageUrl, browserWSEndpoint)
+      await characterCollector(indexId, pageUrl)
+      indexId++
+      fs.writeFileSync('dataCollectors/characters_TEMP.json', JSON.stringify(charactersObj))
     } catch (e) {
       console.error(e)
     }
   }
+
+  fs.writeFileSync('dataCollectors/characters.json', JSON.stringify(charactersObj))
+  fs.copyFileSync('dataCollectors/characters.json', 'resources/characters.json')
+  fs.unlinkSync('dataCollectors/characters_TEMP.json')
+
   await browser.close()
 }
 dataCollectors()

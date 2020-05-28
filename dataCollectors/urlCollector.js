@@ -24,38 +24,38 @@ SOFTWARE.
 
 const puppeteer = require('puppeteer')
 const fs = require('fs')
-const characterCollector = require('./characterCollector')
-let characterUrls = []
-let charactersObj = []
-let indexId = 1 // used as character ID
-let count // no. links on a page
+const { wikiaUrlBase, browserWSEndpoint } = require('./dataCollectors')
+const dUnderscore = new Date().toLocaleDateString().replace(/\//g, '_')
+const timestamp = (Date.now() / 1000) | 0
 
-module.exports = { charactersObj }
+let count // of links on a wiki page
+let pageUrlString // of currently scraped wiki page
 
-async function dataCollectors() {
-  const browser = await puppeteer.launch({ headless: true })
-  const browserWSEndpoint = await browser.wsEndpoint()
-
+async function urlCollector(firstPagePath, lastPagePath, urlArray, jsonName) {
+  const browser = await puppeteer.connect({ browserWSEndpoint })
   const page = await browser.newPage()
-  // await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards?from=Unidentified+Ravenclaw+black+girl+during+the+Battle+of+Hogwarts')
-  await page.goto('https://harrypotter.fandom.com/wiki/Category:Wizards')
 
-  try {
-    // close cookie policy
-    const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
-    await getAcceptBtn[0].click()
-  } catch (e) {
-    console.log('cookie policy already accepted!')
-  }
+  // abort all images, source: https://github.com/GoogleChrome/puppeteer/blob/master/examples/block-images.js
+  await page.setRequestInterception(true)
+  page.on('request', request => {
+    if (request.resourceType() === 'image') {
+      request.abort()
+    } else {
+      request.continue()
+    }
+  })
 
+  await page.goto(wikiaUrlBase + firstPagePath)
   readThroughThePages: do {
     try {
+      await page.waitFor(3000)
+      await page.waitForSelector('.category-page__member-link')
+      pageUrlString = await page.url()
       count = await page.$$eval('.category-page__member-link', el => el.length)
-      console.log('count is: ' + count)
       for (let i = 0; i < count; i++) {
         const currentLink = await page.evaluate(el => el.href, (await page.$$('.category-page__member-link'))[i])
         console.log(currentLink)
-        characterUrls.push(currentLink)
+        urlArray.push(currentLink)
       }
     } catch (e) {
       console.error(e)
@@ -63,31 +63,28 @@ async function dataCollectors() {
 
     // turn a page
     try {
-      await page.waitForSelector('.category-page__pagination-next')[0]
+      await page.waitFor(2000)
+      console.log(pageUrlString + '\n-----------')
+      await page.waitForSelector('.category-page__pagination-next')
       await page.click('.category-page__pagination-next')[0]
     } catch (e) {
+      console.error(e)
       console.log('"I open at the close!" (last page reached)')
       break readThroughThePages
     }
-  } while (
-    (await page.url()) === 'https://harrypotter.fandom.com/wiki/Category:Wizards?from=Wizard+who+claimed+to+be+a+dragon+killer'
-  )
+  } while (!pageUrlString.includes(wikiaUrlBase + firstPagePath + lastPagePath))
 
-  fs.writeFileSync('dataCollectors/characterUrls.json', JSON.stringify(characterUrls))
-
-  // collect characters
-  for (const pageUrl of characterUrls) {
-    try {
-      await characterCollector(indexId, pageUrl, browserWSEndpoint)
-      indexId++
-      console.log(charactersObj)
-    } catch (e) {
-      console.error(e)
-    }
+  // backup previous file
+  if (fs.existsSync(`dataCollectors/${jsonName}Urls.json`)) {
+    fs.renameSync(`dataCollectors/${jsonName}Urls.json`, `dataCollectors/${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
+    console.log(`renamed to ${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
   }
+  // write new file
+  fs.writeFileSync(`dataCollectors/${jsonName}Urls.json`, JSON.stringify(urlArray))
 
-  fs.writeFileSync('dataCollectors/characters.json', JSON.stringify(charactersObj))
-
-  await browser.close()
+  await page.goto('about:blank')
+  await page.close()
+  await browser.disconnect()
 }
-dataCollectors()
+
+module.exports = urlCollector

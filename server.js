@@ -29,6 +29,16 @@ const cors = require('cors')
 
 const categories = require('./resources/categories.json')
 const books = require('./resources/books.json')
+const characters = require('./resources/characters.json')
+
+// searches based on string query
+const search = query => {
+  const queryRegex = RegExp(query, 'gi')
+  const characterResults = characters.filter(character => {
+    if (queryRegex.test(character.name)) return character
+  })
+  return characterResults
+}
 
 const endpointCreation = () => {
   try {
@@ -60,6 +70,23 @@ const endpointCreation = () => {
       const idResult = books.filter(book => book.id == id)
       idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
       console.log(`/api/1/books/${id} endpoint has been called!`)
+    })
+
+    // characters
+
+    // providing a dynamic endpoint for searches
+    app.get('/api/1/characters', (req, res) => {
+      const query = req.query.search
+      const characterResults = search(query)
+      res.json(characterResults)
+      console.log(`/api/1/characters?search=${query} endpoint has been called!`)
+    })
+
+    app.get('/api/1/characters/:id', (req, res) => {
+      const id = req.params.id
+      const idResult = characters.filter(character => character.id == id)
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
+      console.log(`/api/1/characters/${id} endpoint has been called!`)
     })
 
     app.listen(port)

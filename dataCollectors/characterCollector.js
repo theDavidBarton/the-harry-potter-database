@@ -23,16 +23,14 @@ SOFTWARE.
 */
 
 const puppeteer = require('puppeteer')
-const charactersObj = require('./dataCollectorsWorks').charactersObj
+const { charactersObj, browserWSEndpoint } = require('./dataCollectors')
 
 // Uncle Bob Martin, please come & kill me!🧓
-async function characterCollector(index, url, browserWSEndpoint) {
-  let browser
-  let page
-
+async function characterCollector(index, url) {
   let idData = index
   let nameData = null
   let birthData = null
+  let deathData = null
   let ancestryData = null
   let genderData = null
   let hairColorData = null
@@ -48,6 +46,7 @@ async function characterCollector(index, url, browserWSEndpoint) {
       id,
       name,
       birth,
+      death,
       ancestry,
       gender,
       hairColor,
@@ -61,6 +60,7 @@ async function characterCollector(index, url, browserWSEndpoint) {
       this.id = id
       this.name = name
       this.birth = birth
+      this.death = death
       this.ancestry = ancestry
       this.gender = gender
       this.hair_color = hairColor
@@ -73,8 +73,8 @@ async function characterCollector(index, url, browserWSEndpoint) {
     }
   }
 
-  browser = await puppeteer.connect({ browserWSEndpoint })
-  page = await browser.newPage()
+  const browser = await puppeteer.connect({ browserWSEndpoint })
+  const page = await browser.newPage()
 
   // abort all images, source: https://github.com/GoogleChrome/puppeteer/blob/master/examples/block-images.js
   await page.setRequestInterception(true)
@@ -87,15 +87,7 @@ async function characterCollector(index, url, browserWSEndpoint) {
   })
 
   await page.goto(url)
-  /*
-  try {
-    // close cookie policy
-    const getAcceptBtn = await page.$x('//div[contains(text(), "ACCEPT")]')
-    await getAcceptBtn[0].click()
-  } catch (e) {
-    console.log('cookie policy already accepted!')
-  }
-*/
+
   // name of character
   nameData = await page.evaluate(el => el.innerText, (await page.$$('h1'))[0])
 
@@ -108,6 +100,10 @@ async function characterCollector(index, url, browserWSEndpoint) {
       case /Born/.test(actualAsideText):
         birthData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
         console.log(nameData + "'s birthData is: " + birthData)
+        break
+      case /Died/.test(actualAsideText):
+        deathData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
+        console.log(nameData + "'s deathhData is: " + deathData)
         break
       case /Blood status/.test(actualAsideText):
         ancestryData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
@@ -189,6 +185,7 @@ async function characterCollector(index, url, browserWSEndpoint) {
     idData,
     nameData,
     birthData,
+    deathData,
     ancestryData,
     genderData,
     hairColorData,
@@ -200,15 +197,14 @@ async function characterCollector(index, url, browserWSEndpoint) {
     booksFeaturedInData
   )
   console.log(actualCharacterData)
-  if (booksFeaturedInData.length > 0) {
+  if (booksFeaturedInData.length > 0 && nameData.split(' ').length < 5) {
     charactersObj.push(actualCharacterData)
-    console.log('passed validation: character is at least in one book')
+    console.log('passed validation: character is at least in one book & it seems to have a valid name')
   }
 
   await page.goto('about:blank')
   await page.close()
   await browser.disconnect()
 }
-characterCollector()
 
 module.exports = characterCollector
