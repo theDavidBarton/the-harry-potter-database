@@ -24,9 +24,8 @@ SOFTWARE.
 
 const puppeteer = require('puppeteer')
 const fs = require('fs')
-const { wikiaUrlBase, browserWSEndpoint } = require('./dataCollectors')
-const dUnderscore = new Date().toLocaleDateString().replace(/\//g, '_')
-const timestamp = (Date.now() / 1000) | 0
+const retry = require('./../lib/retry')
+const { wikiaUrlBase, browserWSEndpoint, dUnderscore, timestamp } = require('./dataCollectors')
 
 let count // of links on a wiki page
 let pageUrlString // of currently scraped wiki page
@@ -45,17 +44,22 @@ async function urlCollector(firstPagePath, lastPagePath, urlArray, jsonName) {
     }
   })
 
-  await page.goto(wikiaUrlBase + firstPagePath)
+  await retry(() => page.goto(wikiaUrlBase + firstPagePath), 10)
   readThroughThePages: do {
     try {
       await page.waitFor(3000)
       await page.waitForSelector('.category-page__member-link')
+      await page.waitFor(1000)
       pageUrlString = await page.url()
       count = await page.$$eval('.category-page__member-link', el => el.length)
       for (let i = 0; i < count; i++) {
-        const currentLink = await page.evaluate(el => el.href, (await page.$$('.category-page__member-link'))[i])
-        console.log(currentLink)
-        urlArray.push(currentLink)
+        try {
+          const currentLink = await page.evaluate(el => el.href, (await page.$$('.category-page__member-link'))[i])
+          console.log(currentLink)
+          urlArray.push(currentLink)
+        } catch (e) {
+          console.error(e)
+        }
       }
     } catch (e) {
       console.error(e)
@@ -65,7 +69,7 @@ async function urlCollector(firstPagePath, lastPagePath, urlArray, jsonName) {
     try {
       await page.waitFor(2000)
       console.log(pageUrlString + '\n-----------')
-      await page.waitForSelector('.category-page__pagination-next')
+      await retry(() => page.waitForSelector('.category-page__pagination-next'), 2)
       await page.click('.category-page__pagination-next')[0]
     } catch (e) {
       console.error(e)

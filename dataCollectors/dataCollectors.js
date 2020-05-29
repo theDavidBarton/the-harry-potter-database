@@ -28,6 +28,10 @@ const fs = require('fs')
 const wikiaUrlBase = 'https://harrypotter.fandom.com/wiki/'
 const characterUrls = []
 const charactersObj = []
+const errorUrls = []
+
+const dUnderscore = new Date().toLocaleDateString().replace(/\//g, '_')
+const timestamp = (Date.now() / 1000) | 0
 
 let indexId = 1 // used as character ID
 
@@ -35,7 +39,7 @@ async function dataCollectors() {
   const browser = await puppeteer.launch({ headless: true })
   const browserWSEndpoint = await browser.wsEndpoint()
 
-  module.exports = { wikiaUrlBase, charactersObj, browserWSEndpoint }
+  module.exports = { wikiaUrlBase, charactersObj, browserWSEndpoint, dUnderscore, timestamp }
   const urlCollector = require('./urlCollector')
   const characterCollector = require('./characterCollector')
   const page = await browser.newPage()
@@ -62,8 +66,16 @@ async function dataCollectors() {
       indexId++
       fs.writeFileSync('dataCollectors/characters_TEMP.json', JSON.stringify(charactersObj))
     } catch (e) {
+      errorUrls.push(pageUrl)
       console.error(e)
+      fs.writeFileSync(`dataCollectors/errors_${dUnderscore}_${timestamp}.json`, JSON.stringify(errorUrls))
     }
+  }
+
+  // backup previous file
+  if (fs.existsSync('dataCollectors/characters.json.json')) {
+    fs.renameSync('dataCollectors/characters.json', `dataCollectors/characters_${dUnderscore}_${timestamp}.json`)
+    console.log(`renamed to ${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
   }
 
   fs.writeFileSync('dataCollectors/characters.json', JSON.stringify(charactersObj))

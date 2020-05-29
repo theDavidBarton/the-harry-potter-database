@@ -24,18 +24,7 @@ SOFTWARE.
 
 const puppeteer = require('puppeteer')
 const { charactersObj, browserWSEndpoint } = require('./dataCollectors')
-
-async function retry(promiseFactory, retryCount) {
-  try {
-    return await promiseFactory()
-  } catch (e) {
-    if (retryCount <= 0) {
-      console.log(retryCount + ' try left')
-      throw e
-    }
-    return await retry(promiseFactory, retryCount - 1)
-  }
-}
+const retry = require('./../lib/retry')
 
 // Uncle Bob Martin, please come & kill me!🧓
 async function characterCollector(index, url) {
@@ -98,7 +87,7 @@ async function characterCollector(index, url) {
     }
   })
 
-  await retry(() => page.goto(url), 5)
+  await retry(() => page.goto(url), 10)
 
   // name of character
   nameData = await page.evaluate(el => el.innerText, (await page.$$('h1'))[0])
@@ -209,7 +198,7 @@ async function characterCollector(index, url) {
     booksFeaturedInData
   )
   console.log(actualCharacterData)
-  if (booksFeaturedInData.length > 0 && nameData.split(' ').length < 5) {
+  if (booksFeaturedInData.length > 0 && nameData.split(' ').length < 5 && !nameData.match(/colleague|friends|unidentified/gi)) {
     charactersObj.push(actualCharacterData)
     console.log('passed validation: character is at least in one book & it seems to have a valid name')
   }
