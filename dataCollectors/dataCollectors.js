@@ -24,6 +24,7 @@ SOFTWARE.
 
 const puppeteer = require('puppeteer')
 const fs = require('fs')
+const duplicateFinder = require('./duplicateFinder')
 
 const wikiaUrlBase = 'https://harrypotter.fandom.com/wiki/'
 const characterUrls = []
@@ -71,6 +72,9 @@ async function dataCollectors() {
       fs.writeFileSync(`dataCollectors/errors_${dUnderscore}_${timestamp}.json`, JSON.stringify(errorUrls))
     }
   }
+
+  // check for duplicates in the final object
+  duplicateFinder(charactersObj)
 
   // backup previous file
   if (fs.existsSync('dataCollectors/characters.json')) {

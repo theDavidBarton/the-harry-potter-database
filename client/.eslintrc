@@ -15,7 +15,7 @@
     }
   },
   "rules": {
-    "max-len": [1, { "code": 120, "tabWidth": 4, "ignoreUrls": true, "ignoreComments": true, "ignoreStrings": true }],
+    "max-len": [1, { "code": 220, "tabWidth": 4, "ignoreUrls": true, "ignoreComments": true, "ignoreStrings": true }],
     "semi": [2, "never"],
     "quotes": [2, "single"],
     "comma-dangle": [2, "never"],
