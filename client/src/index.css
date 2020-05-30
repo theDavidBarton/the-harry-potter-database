@@ -5,6 +5,10 @@
   font-family: 'Chelsea Market', cursive;
 }
 
+img {
+  width: 100%;
+}
+
 pre {
   margin: 10px;
   padding: 10px;

@@ -24,6 +24,8 @@
 
 /api/1/characters (mandatory parameter: search)
 
+/api/1/characters/all
+
 /api/1/characters/{id}
 
 `GET`
