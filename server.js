@@ -26,6 +26,7 @@ SOFTWARE.
 
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 const _ = require('lodash')
 
 const categories = require('./resources/categories.json')
@@ -47,6 +48,15 @@ const endpointCreation = () => {
     const app = express()
     const port = process.env.PORT || 5000
     app.use(cors())
+
+    app.use(express.static(path.join(__dirname, 'client/build')))
+    // required to serve SPA on heroku production without routing problems; it will skip only 'api' calls
+    if (process.env.NODE_ENV === 'production') {
+      app.get(/^((?!(api)).)*$/, (req, res) => {
+        res.set('Cache-Control', 'public, max-age=31536001')
+        res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+      })
+    }
 
     // categories / root
     app.get(/^\/api\/1(\/$|$|\/categories\/$|\/categories$)/, (req, res) => {
