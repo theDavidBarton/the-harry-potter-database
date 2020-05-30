@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react'
 export default class Characters extends Component {
   state = {
     data: null,
+    booksData: null,
     dataIsReady: false
   }
 
@@ -14,8 +15,14 @@ export default class Characters extends Component {
     try {
       const response = await fetch(`/api/1/characters/${this.props.match.params.id ? this.props.match.params.id : 1}`)
       const json = await response.json()
-      console.log(json)
-      this.setState({ data: json, dataIsReady: true })
+      this.setState({ data: json })
+    } catch (e) {
+      console.error(e)
+    }
+    try {
+      const response = await fetch('/api/1/books')
+      const json = await response.json()
+      this.setState({ booksData: json, dataIsReady: true })
     } catch (e) {
       console.error(e)
     }
@@ -23,13 +30,15 @@ export default class Characters extends Component {
 
   render() {
     const data = this.state.dataIsReady ? this.state.data[0] : null
+    const books = this.state.dataIsReady ? this.state.booksData : null
+
     return (
       <Fragment>
         {this.state.dataIsReady ? (
           <Fragment>
             <div className='col-md-9'>
               <h1>{data.name}</h1>
-              <h3>Summary</h3>
+              <h3>Bio</h3>
               <ul>
                 {data.birth ? (
                   <Fragment>
@@ -101,6 +110,22 @@ export default class Characters extends Component {
                       {data.associated_groups.map((el, i) => (
                         <span key={i}>{(i ? ', ' : '') + el}</span>
                       ))}
+                    </li>
+                  </Fragment>
+                ) : null}
+                {data.books_featured_in.length > 0 ? (
+                  <Fragment>
+                    <li>
+                      <strong>Books:</strong>{' '}
+                      <ul>
+                        {data.books_featured_in.map((el, i) => (
+                          <li key={i}>
+                            <a className='text-warning' key={el} href={`/books/${el}`}>
+                              {books[el - 1].title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </li>
                   </Fragment>
                 ) : null}

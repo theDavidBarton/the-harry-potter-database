@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import Search from './search'
 import github from './../img/github.svg'
 
 export default class Header extends Component {
@@ -9,7 +10,7 @@ export default class Header extends Component {
           <div className='row'>
             <div className='col'>
               <a href='/' className='text-decoration-none text-dark'>
-                <h1 className='d-none d-md-block display-4 py-4'>
+                <h1 className='d-none d-md-block display-4 pt-4'>
                   🗲 The Harry Potter Database{' '}
                   <span role='img' aria-label='potter emoji'>
                     🤓
@@ -22,6 +23,11 @@ export default class Header extends Component {
               <a href='https://github.com/theDavidBarton/the-harry-potter-database' target='_blank' rel='noopener noreferrer'>
                 <img className='github' alt='github logo' src={github} />
               </a>
+            </div>
+          </div>
+          <div className='row justify-content-md-center'>
+            <div className='col-12 col-md-5 align-self-end order-1 order-md-0 pb-4'>
+              <Search />
             </div>
           </div>
         </header>

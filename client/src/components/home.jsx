@@ -14,7 +14,6 @@ export default class Home extends Component {
     try {
       const response = await fetch('/api/1/books')
       const json = await response.json()
-      console.log(json)
       this.setState({ data: json, dataIsReady: true })
     } catch (e) {
       console.error(e)
