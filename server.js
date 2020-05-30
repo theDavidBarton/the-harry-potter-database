@@ -26,9 +26,21 @@ SOFTWARE.
 
 const express = require('express')
 const cors = require('cors')
+const _ = require('lodash')
 
 const categories = require('./resources/categories.json')
 const books = require('./resources/books.json')
+const characters = require('./resources/characters.json')
+const spells = require('./resources/spells.json')
+
+// searches based on string query
+const search = query => {
+  const queryRegex = new RegExp('.*' + query + '.*', 'gi')
+  const results = characters.filter(character => {
+    if (character.name.match(queryRegex)) return character
+  })
+  return results
+}
 
 const endpointCreation = () => {
   try {
@@ -62,12 +74,43 @@ const endpointCreation = () => {
       console.log(`/api/1/books/${id} endpoint has been called!`)
     })
 
+    // characters
+
+    // providing a dynamic endpoint for searches
+    app.get('/api/1/characters', (req, res) => {
+      const query = req.query.search
+      const results = search(query)
+      const resultsOrdered = _.orderBy(results, book => book.books_featured_in.length, ['desc'])
+      res.json(resultsOrdered)
+      console.log(`/api/1/characters?search=${query} endpoint has been called!`)
+    })
+
+    app.get('/api/1/characters/:id', (req, res) => {
+      const id = req.params.id
+      const idResult = characters.filter(character => character.id == id)
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
+      console.log(`/api/1/characters/${id} endpoint has been called!`)
+    })
+
+    // spells
+    app.get('/api/1/spells/', (req, res) => {
+      res.json(spells)
+      console.log('/api/1/spells/ endpoint has been called!')
+    })
+
+    app.get('/api/1/spells/:id', (req, res) => {
+      const id = req.params.id
+      const idResult = spells.filter(spell => spell.id == id)
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
+      console.log(`/api/1/spells/${id} endpoint has been called!`)
+    })
+
     app.listen(port)
 
     console.log(
       `API is listening on ${port}
-      \nEndpoint is ready at: localhost:${port}/api/1/... 
-      \nCheck documentation at: https://github.com/theDavidBarton/the-harry-potter-database`
+      Endpoint is ready at: localhost:${port}/api/1/... 
+      Check documentation at: https://github.com/theDavidBarton/the-harry-potter-database`
     )
   } catch (e) {
     console.error(e)

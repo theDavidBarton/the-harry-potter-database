@@ -33,8 +33,8 @@ export default class Home extends Component {
                   <img
                     className='img-fluid'
                     key={book.id}
-                    src={book.bookCovers[0].URL}
-                    alt={'Artwork by ' + book.bookCovers[0].artist}
+                    src={book.book_covers[0].URL}
+                    alt={'Artwork by ' + book.book_covers[0].artist}
                   />
                 </a>
               </div>
