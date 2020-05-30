@@ -149,7 +149,7 @@ async function characterCollector(index, url) {
   // search for the featured books
   try {
     const searchForBooks = await page.evaluate(el => el.textContent, (await page.$$('html > body'))[0])
-    let booksArray = searchForBooks.match(/(Appearances\n)([^%]*)(?=\nNotes and references)/gm)[0].split('\n')
+    let booksArray = searchForBooks.match(/(Appearances\n)([^]*)(?=\nNotes and references)/gm)[0].split('\n')
     booksArray1 = booksArray
       .filter(el => /Harry Potter and the Philosopher\'s Stone/g.test(el))
       .filter(el => !/\s\(film\)|\s\(video game\)/g.test(el))
