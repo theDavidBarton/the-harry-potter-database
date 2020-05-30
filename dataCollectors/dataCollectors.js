@@ -73,7 +73,7 @@ async function dataCollectors() {
   }
 
   // backup previous file
-  if (fs.existsSync('dataCollectors/characters.json.json')) {
+  if (fs.existsSync('dataCollectors/characters.json')) {
     fs.renameSync('dataCollectors/characters.json', `dataCollectors/characters_${dUnderscore}_${timestamp}.json`)
     console.log(`renamed to ${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
   }
