@@ -1,7 +1,7 @@
 {
-  "name": "the-harry-potter-database",
-  "version": "0.0.1",
-  "description": "THe backend of the Harry Potter DB",
+  "name": "the-harry-potter-database-server",
+  "version": "0.1.0",
+  "description": "The backend of the Harry Potter DB",
   "main": "server.js",
   "author": "David Barton (theDavidBarton)",
   "repository": "https://github.com/theDavidBarton/the-harry-potter-database",
@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint"
+    "lint": "eslint",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "engines": {
     "node": "12.x"
