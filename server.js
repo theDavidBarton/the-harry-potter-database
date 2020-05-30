@@ -85,6 +85,11 @@ const endpointCreation = () => {
       console.log(`/api/1/characters?search=${query} endpoint has been called!`)
     })
 
+    app.get('/api/1/characters/all', (req, res) => {
+      res.json(characters)
+      console.log('/api/1/characters/all endpoint has been called!')
+    })
+
     app.get('/api/1/characters/:id', (req, res) => {
       const id = req.params.id
       const idResult = characters.filter(character => character.id == id)
