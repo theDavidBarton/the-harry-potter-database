@@ -7,19 +7,19 @@ export default class Header extends Component {
     return (
       <Fragment>
         <header className='container'>
-          <div className='row'>
+          <div className='row pt-4'>
             <div className='col'>
               <a href='/' className='text-decoration-none text-dark'>
-                <h1 className='d-none d-md-block display-4 pt-4'>
+                <h1 className='d-none d-md-block display-4'>
                   🗲 The Harry Potter Database{' '}
                   <span role='img' aria-label='potter emoji'>
                     🤓
                   </span>
                 </h1>
-                <h1 className='d-md-none py-4'>🗲 The HPDb</h1>
+                <h1 className='d-md-none'>🗲 The HPDb</h1>
               </a>
             </div>
-            <div className='col-auto py-4'>
+            <div className='col-auto'>
               <a href='https://github.com/theDavidBarton/the-harry-potter-database' target='_blank' rel='noopener noreferrer'>
                 <img className='github' alt='github logo' src={github} />
               </a>

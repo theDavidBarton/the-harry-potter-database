@@ -15,6 +15,10 @@ export default class Books extends Component {
   getApi = async () => {
     try {
       const response = await fetch(`/api/1/books/${this.props.match.params.id ? this.props.match.params.id : 1}`)
+      if (response.status >= 400) {
+        const path = window.location.pathname
+        window.location.pathname = path.replace(path, '404')
+      }
       const json = await response.json()
       this.setState({ data: json })
     } catch (e) {
@@ -60,8 +64,8 @@ export default class Books extends Component {
               <h2 className='text-warning'>by {data.author}</h2>
               <h3>Summary</h3>
               <p>
-                The book {data.title} written by {data.author} was published in the UK on {data.publish_date['UK']} and on{' '}
-                {data.publish_date['UK']} in the US.
+                The book <i>{data.title}</i> written by {data.author} was published in the UK on {data.publish_date[0].UK} and on{' '}
+                {data.publish_date[1].US} in the US.
                 <br />
                 The main plot takes place in {data.plot_take_place_years[0]} and {data.plot_take_place_years[1]}.
               </p>
@@ -89,8 +93,8 @@ export default class Books extends Component {
               </div>
               <h3>Response preview</h3>
               <code>
-                <kbd>GET</kbd> {window.location.href}
-              </code>
+                <kbd>GET</kbd> {'/api/1' + window.location.pathname}
+              </code>{' '}
               :
               <pre className='pre-scrollable'>
                 <code>{JSON.stringify(data, undefined, 2)}</code>

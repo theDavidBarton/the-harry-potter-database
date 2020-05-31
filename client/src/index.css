@@ -96,3 +96,8 @@ pre code {
 .long-content {
   overflow: hidden;
 }
+
+/* code samples scrollbar hide */
+.pre-scrollable::-webkit-scrollbar {
+  display: none;
+}
