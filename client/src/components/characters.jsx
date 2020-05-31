@@ -14,15 +14,16 @@ export default class Characters extends Component {
   getApi = async () => {
     try {
       const response = await fetch(`/api/1/characters/${this.props.match.params.id ? this.props.match.params.id : 1}`)
-      const json = await response.json()
-      this.setState({ data: json })
-    } catch (e) {
-      console.error(e)
-    }
-    try {
-      const response = await fetch('/api/1/books')
-      const json = await response.json()
-      this.setState({ booksData: json, dataIsReady: true })
+      if (response.status >= 400) {
+        const path = window.location.pathname
+        window.location.pathname = window.location.pathname.replace(path, '404')
+      } else {
+        const json = await response.json()
+        this.setState({ data: json })
+        const responseBooks = await fetch('/api/1/books')
+        const jsonBooks = await responseBooks.json()
+        this.setState({ booksData: jsonBooks, dataIsReady: true })
+      }
     } catch (e) {
       console.error(e)
     }
@@ -132,8 +133,8 @@ export default class Characters extends Component {
               </ul>
               <h3>Response preview</h3>
               <code>
-                <kbd>GET</kbd> {window.location.href}
-              </code>
+                <kbd>GET</kbd> {'/api/1' + window.location.pathname}
+              </code>{' '}
               :
               <pre className='pre-scrollable'>
                 <code>{JSON.stringify(data, undefined, 2)}</code>
