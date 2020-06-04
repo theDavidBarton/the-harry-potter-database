@@ -32,6 +32,7 @@ async function characterCollector(index, url) {
   let nameData = null
   let birthData = null
   let deathData = null
+  let speciesData = null
   let ancestryData = null
   let genderData = null
   let hairColorData = null
@@ -48,6 +49,7 @@ async function characterCollector(index, url) {
       name,
       birth,
       death,
+      species,
       ancestry,
       gender,
       hairColor,
@@ -62,6 +64,7 @@ async function characterCollector(index, url) {
       this.name = name
       this.birth = birth
       this.death = death
+      this.species = species
       this.ancestry = ancestry
       this.gender = gender
       this.hair_color = hairColor
@@ -100,49 +103,53 @@ async function characterCollector(index, url) {
     switch (true) {
       case /Born/.test(actualAsideText):
         birthData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s birthData is: " + birthData)
+        console.log('[CHARACTER] ' + nameData + "'s birthData is: " + birthData)
         break
       case /Died/.test(actualAsideText):
         deathData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s deathhData is: " + deathData)
+        console.log('[CHARACTER] ' + nameData + "'s deathData is: " + deathData)
+        break
+      case /Species/.test(actualAsideText):
+        speciesData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
+        console.log('[CHARACTER] ' + nameData + "'s speciesData is: " + speciesData)
         break
       case /Blood status/.test(actualAsideText):
         ancestryData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s ancestryData is: " + ancestryData)
+        console.log('[CHARACTER] ' + nameData + "'s ancestryData is: " + ancestryData)
         break
       case /Gender/.test(actualAsideText):
         genderData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s genderData is: " + genderData)
+        console.log('[CHARACTER] ' + nameData + "'s genderData is: " + genderData)
         break
       case /Hair colour/.test(actualAsideText):
         hairColorData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s hairColorData is: " + hairColorData)
+        console.log('[CHARACTER] ' + nameData + "'s hairColorData is: " + hairColorData)
         break
       case /Eye colour/.test(actualAsideText):
         eyeColorData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s eyeColorData is: " + eyeColorData)
+        console.log('[CHARACTER] ' + nameData + "'s eyeColorData is: " + eyeColorData)
         break
       case /Wand/.test(actualAsideText):
         wandData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s wandData is: " + wandData)
+        console.log('[CHARACTER] ' + nameData + "'s wandData is: " + wandData)
         break
       case /Patronus/.test(actualAsideText):
         patronusData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s patronusData is: " + patronusData)
+        console.log('[CHARACTER] ' + nameData + "'s patronusData is: " + patronusData)
         break
       case /House/.test(actualAsideText):
         houseData = actualAsideText.match(/\n(.*)\n|\n(.*)/)[0].replace(/\[\d+\]|\n/gm, '')
-        console.log(nameData + "'s houseData is: " + houseData)
+        console.log('[CHARACTER] ' + nameData + "'s houseData is: " + houseData)
         break
       case /Loyalty/.test(actualAsideText):
         associatedGroupsData = actualAsideText
           .split(/\n/)
           .map(el => el.replace(/\[\d+\]|\n/gm, ''))
           .filter(el => !/Loyalty/g.test(el)) // remove category header
-        console.log(nameData + "'s associatedGroupsData is: " + associatedGroupsData)
+        console.log('[CHARACTER] ' + nameData + "'s associatedGroupsData is: " + associatedGroupsData)
         break
       default:
-        console.log('this info is not collected!')
+        console.log('[CHARACTER] this info is not collected!')
     }
   }
 
@@ -187,6 +194,7 @@ async function characterCollector(index, url) {
     nameData,
     birthData,
     deathData,
+    speciesData,
     ancestryData,
     genderData,
     hairColorData,
@@ -200,7 +208,9 @@ async function characterCollector(index, url) {
   console.log(actualCharacterData)
   if (booksFeaturedInData.length > 0 && nameData.split(' ').length < 5 && !nameData.match(/colleague|friends|unidentified/gi)) {
     charactersObj.push(actualCharacterData)
-    console.log('passed validation: character is at least in one book & it seems to have a valid name')
+    console.log('[CHARACTER VALIDATION] passed: character is at least in one book & it seems to have a valid name')
+  } else {
+    throw '[CHARACTER VALIDATION] failed'
   }
 
   await page.goto('about:blank')
