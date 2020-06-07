@@ -22,19 +22,35 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+/*
+
+'--noURL' usage:
+$ node dataCollectors/dataCollectors.js --noURL
+
+only the object collectors gonna run, the url-s will be the last ones 
+saved in the directory
+
+'--continueLast' usage:
+$ node dataCollectors/dataCollectors.js --noURL --continueLast
+
+continues the scraping from where it was stopped/script failed
+
+*/
+
 const puppeteer = require('puppeteer')
 const fs = require('fs')
 const duplicateFinder = require('./duplicateFinder')
 
 const wikiaUrlBase = 'https://harrypotter.fandom.com/wiki/'
-const characterUrls = []
-const charactersObj = []
+const characterUrls = process.argv[2] === '--noURL' ? require('./characterUrls.json') : []
+const charactersObj = process.argv[3] === '--continueLast' ? require('./characters_TEMP.json') : []
 const errorUrls = []
 
 const dUnderscore = new Date().toLocaleDateString().replace(/\//g, '_')
 const timestamp = (Date.now() / 1000) | 0
 
-let indexId = 1 // used as character ID
+let indexId = process.argv[3] === '--continueLast' ? charactersObj[charactersObj.length - 1].id + 1 : 1 // used as character ID
+let lastCharacterUrl = process.argv[3] === '--continueLast' ? require('./error_log/lastCharacterUrl.json') : 0 // saves where the Object scraping is
 
 async function dataCollectors() {
   const browser = await puppeteer.launch({ headless: true })
@@ -42,6 +58,7 @@ async function dataCollectors() {
 
   module.exports = { wikiaUrlBase, charactersObj, browserWSEndpoint, dUnderscore, timestamp }
   const urlCollector = require('./urlCollector')
+  const urlCollectorConfig = require('./urlCollectorConfig.json')
   const characterCollector = require('./characterCollector')
   const page = await browser.newPage()
 
@@ -58,18 +75,31 @@ async function dataCollectors() {
     process.exit(0)
   }
 
-  await urlCollector('Category:Wizards', '?from=Wizard+who+claimed+to+be+a+dragon+killer', characterUrls, 'character')
+  // collect url-s
+  if (process.argv[2] !== '--noURL') {
+    for (const category of urlCollectorConfig) {
+      try {
+        await urlCollector(category.firstPagePath, category.lastPagePath, eval(category.urlArray), category.jsonName)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+  }
 
   // collect characters
-  for (const pageUrl of characterUrls) {
+  for (const pageUrl of characterUrls.slice(lastCharacterUrl)) {
     try {
+      lastCharacterUrl++
       await characterCollector(indexId, pageUrl)
       indexId++
       fs.writeFileSync('dataCollectors/characters_TEMP.json', JSON.stringify(charactersObj))
+      fs.writeFileSync('dataCollectors/error_log/lastCharacterUrl.json', JSON.stringify(lastCharacterUrl))
     } catch (e) {
-      errorUrls.push(pageUrl)
       console.error(e)
-      fs.writeFileSync(`dataCollectors/errors_${dUnderscore}_${timestamp}.json`, JSON.stringify(errorUrls))
+      if (e !== '[CHARACTER VALIDATION] failed') {
+        errorUrls.push(pageUrl)
+        fs.writeFileSync(`dataCollectors/error_log/errors_${dUnderscore}_${timestamp}.json`, JSON.stringify(errorUrls))
+      }
     }
   }
 
@@ -78,7 +108,7 @@ async function dataCollectors() {
 
   // backup previous file
   if (fs.existsSync('dataCollectors/characters.json')) {
-    fs.renameSync('dataCollectors/characters.json', `dataCollectors/characters_${dUnderscore}_${timestamp}.json`)
+    fs.renameSync('dataCollectors/characters.json', `dataCollectors/backup/characters_${dUnderscore}_${timestamp}.json`)
     console.log(`renamed to ${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
   }
 

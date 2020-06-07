@@ -66,21 +66,21 @@ async function urlCollector(firstPagePath, lastPagePath, urlArray, jsonName) {
     }
 
     // turn a page
-    try {
-      await page.waitFor(2000)
-      console.log(pageUrlString + '\n-----------')
-      await retry(() => page.waitForSelector('.category-page__pagination-next'), 2)
-      await page.click('.category-page__pagination-next')[0]
-    } catch (e) {
-      console.error(e)
-      console.log('"I open at the close!" (last page reached)')
-      break readThroughThePages
+    if (!pageUrlString.includes(wikiaUrlBase + firstPagePath + lastPagePath)) {
+      try {
+        await page.waitFor(2000)
+        console.log(pageUrlString + '\n-----------')
+        await retry(() => page.waitForSelector('.category-page__pagination-next'), 1)
+        await page.click('.category-page__pagination-next')[0]
+      } catch (e) {
+        console.error(e)
+      }
     }
   } while (!pageUrlString.includes(wikiaUrlBase + firstPagePath + lastPagePath))
 
   // backup previous file
   if (fs.existsSync(`dataCollectors/${jsonName}Urls.json`)) {
-    fs.renameSync(`dataCollectors/${jsonName}Urls.json`, `dataCollectors/${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
+    fs.renameSync(`dataCollectors/${jsonName}Urls.json`, `dataCollectors/backup/${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
     console.log(`renamed to ${jsonName}Urls_${dUnderscore}_${timestamp}.json`)
   }
   // write new file

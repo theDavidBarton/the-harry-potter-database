@@ -1,0 +1,16 @@
+[
+  {
+    "name": "males",
+    "firstPagePath": "Category:Males",
+    "lastPagePath": "?from=Varney%2C+Herbert%0AHerbert+Varney",
+    "urlArray": "characterUrls",
+    "jsonName": "character"
+  },
+  {
+    "name": "females",
+    "firstPagePath": "Category:Females",
+    "lastPagePath": "?from=Yarrow%2C+Pauline%0APauline+Yarrow",
+    "urlArray": "characterUrls",
+    "jsonName": "character"
+  }
+]
