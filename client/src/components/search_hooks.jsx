@@ -7,7 +7,7 @@ export default function Search() {
   const [dropdownIsopened, setDropdownIsopened] = useState(false)
   const [keyword, setKeyword] = useState('')
 
-  async function getApiSearch() {
+  async function getApi() {
     if (keyword !== '') {
       try {
         const response = await fetch(`/api/1/characters?search=${keyword.toLowerCase()}`)
@@ -20,14 +20,13 @@ export default function Search() {
     }
   }
 
-  // ⚠️ buggy! missing dependency warning + last character is not sent to autocompl.; another useEffect set up
   useEffect(() => {
-    getApiSearch()
-  }, [])
+    getApi()
+  })
 
   const setKeywordInInput = async event => {
     await setKeyword(event.target.value)
-    getApiSearch()
+    getApi()
     setDropdownIsopened(true)
   }
 
