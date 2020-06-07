@@ -90,6 +90,7 @@ async function characterCollector(index, url) {
     }
   })
 
+  console.log('[CHARACTER URL] ' + url)
   await retry(() => page.goto(url), 10)
 
   // name of character
