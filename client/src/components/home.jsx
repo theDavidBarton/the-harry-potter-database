@@ -1,46 +1,42 @@
-import React, { Component, Fragment } from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 
-export default class Home extends Component {
-  state = {
-    data: null,
-    dataIsReady: false
-  }
+export default function Home() {
+  const [data, setData] = useState(null)
+  const [dataIsReady, setDataIsReady] = useState(false)
 
-  componentDidMount() {
-    this.getApi()
-  }
-
-  getApi = async () => {
+  async function getApiBooks() {
     try {
       const response = await fetch('/api/1/books')
       const json = await response.json()
-      this.setState({ data: json, dataIsReady: true })
+      setData(json)
+      setDataIsReady(true)
     } catch (e) {
       console.error(e)
     }
   }
 
-  render() {
-    const data = this.state.dataIsReady ? this.state.data : null
-    return (
-      <Fragment>
-        {this.state.dataIsReady ? (
-          <Fragment>
-            {data.map(book => (
-              <div key={book.id} className='col-md col-sm-4 py-3'>
-                <a href={`/books/${book.id}`}>
-                  <img
-                    className='img-fluid'
-                    key={book.id}
-                    src={book.book_covers[0].URL}
-                    alt={'Artwork by ' + book.book_covers[0].artist}
-                  />
-                </a>
-              </div>
-            ))}
-          </Fragment>
-        ) : null}
-      </Fragment>
-    )
-  }
+  useEffect(() => {
+    getApiBooks()
+  }, [])
+
+  return (
+    <Fragment>
+      {dataIsReady ? (
+        <Fragment>
+          {data.map(book => (
+            <div key={book.id} className='col-md col-sm-1 py-3'>
+              <a href={`/books/${book.id}`}>
+                <img
+                  className='img-fluid'
+                  key={book.id}
+                  src={book.book_covers[0].URL}
+                  alt={'Artwork by ' + book.book_covers[0].artist}
+                />
+              </a>
+            </div>
+          ))}
+        </Fragment>
+      ) : null}
+    </Fragment>
+  )
 }

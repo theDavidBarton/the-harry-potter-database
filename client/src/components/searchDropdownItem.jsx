@@ -1,35 +1,24 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 
-class SearchDropdownItem extends Component {
-  state = {
-    result: this.props.result
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <a key={this.state.result.id + '_a'} href={`/characters/${this.state.result.id}`} className='text-decoration-none'>
-          <li key={this.state.result.id + '_li'} className='my-1 text-nowrap d-inline-block text-truncate result-list-width'>
-            <span key={this.state.result.id + '_span'} className='mx-1'>
-              {this.state.result.gender === 'Female' ? '♀ ' : '♂ '}
-              {this.state.result.name}
-            </span>
-          </li>
-        </a>
-      </Fragment>
-    )
-  }
+export default function SearchDropdownItem({ result }) {
+  return (
+    <Fragment>
+      <a key={result.id + '_a'} href={`/characters/${result.id}`} className='text-decoration-none'>
+        <li key={result.id + '_li'} className='my-1 text-nowrap d-inline-block text-truncate result-list-width'>
+          <span key={result.id + '_span'} className='mx-1'>
+            {result.gender === 'Female' ? '♀ ' : '♂ '}
+            {result.name}
+          </span>
+        </li>
+      </a>
+    </Fragment>
+  )
 }
 
-class SearchDropdownItemNoResult extends Component {
-  render() {
-    return (
-      <li className='my-1 text-nowrap d-inline-block text-truncate result-list-width'>
-        <span className='mx-1'>no results found...</span>
-      </li>
-    )
-  }
+export function SearchDropdownItemNoResult() {
+  return (
+    <li className='my-1 text-nowrap d-inline-block text-truncate result-list-width'>
+      <span className='mx-1'>no results found...</span>
+    </li>
+  )
 }
-
-export default SearchDropdownItem
-export { SearchDropdownItemNoResult }
