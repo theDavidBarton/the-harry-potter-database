@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Fragment>
       <Header />
-      <div className='bg-dark text-light p-4'>
+      <main className='bg-dark text-light p-4'>
         <div className='container'>
           <div className='row'>
             <BrowserRouter>
@@ -24,7 +24,7 @@ export default function App() {
             </BrowserRouter>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </Fragment>
   )

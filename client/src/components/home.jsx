@@ -24,7 +24,7 @@ export default function Home() {
       {dataIsReady ? (
         <Fragment>
           {data.map(book => (
-            <div key={book.id} className='col-md col-sm-4 py-3'>
+            <div key={book.id} className='col-md col-sm-1 py-3'>
               <a href={`/books/${book.id}`}>
                 <img
                   className='img-fluid'
