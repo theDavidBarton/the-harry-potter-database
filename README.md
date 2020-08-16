@@ -23,7 +23,7 @@
 - /api/1/characters/all
 - /api/1/characters/{id}
 
-`GET` **spells** (data collection is in progress)
+`GET` **spells**
 
 - /api/1/spells
 - /api/1/spells/{id}
