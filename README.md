@@ -25,12 +25,14 @@
 
 `GET` **spells**
 
-- /api/1/spells
+- /api/1/spells (mandatory parameter: **?search**)
+- /api/1/spells/all
 - /api/1/spells/{id}
 
 `GET` **potions**
 
-- /api/1/potions
+- /api/1/potions (mandatory parameter: **?search**)
+- /api/1/potions/all
 - /api/1/potions/{id}
 
 # Copyright

@@ -36,10 +36,10 @@ const spells = require('./resources/spells.json')
 const potions = require('./resources/potions.json')
 
 // searches based on string query
-const search = query => {
+const search = (array, query) => {
   const queryRegex = new RegExp('.*' + query + '.*', 'gi')
-  const results = characters.filter(character => {
-    if (character.name.match(queryRegex)) return character
+  const results = array.filter(el => {
+    if (el.name.match(queryRegex)) return el
   })
   return results
 }
@@ -90,7 +90,7 @@ const endpointCreation = () => {
     // providing a dynamic endpoint for searches
     app.get('/api/1/characters', (req, res) => {
       const query = req.query.search
-      const results = search(query)
+      const results = search(characters, query)
       const resultsOrdered = _.orderBy(results, book => book.books_featured_in.length, ['desc'])
       res.json(resultsOrdered)
       console.log(`/api/1/characters?search=${query} endpoint has been called!`)
@@ -109,9 +109,16 @@ const endpointCreation = () => {
     })
 
     // spells
-    app.get('/api/1/spells/', (req, res) => {
+    app.get('/api/1/spells', (req, res) => {
+      const query = req.query.search
+      const results = search(spells, query)
+      res.json(results)
+      console.log(`/api/1/spells?search=${query} endpoint has been called!`)
+    })
+
+    app.get('/api/1/spells/all', (req, res) => {
       res.json(spells)
-      console.log('/api/1/spells/ endpoint has been called!')
+      console.log('/api/1/spells/all endpoint has been called!')
     })
 
     app.get('/api/1/spells/:id', (req, res) => {
@@ -122,9 +129,16 @@ const endpointCreation = () => {
     })
 
     // potions
-    app.get('/api/1/potions/', (req, res) => {
+    app.get('/api/1/potions', (req, res) => {
+      const query = req.query.search
+      const results = search(potions, query)
+      res.json(results)
+      console.log(`/api/1/potions?search=${query} endpoint has been called!`)
+    })
+
+    app.get('/api/1/potions/all', (req, res) => {
       res.json(potions)
-      console.log('/api/1/potions/ endpoint has been called!')
+      console.log('/api/1/potions/all endpoint has been called!')
     })
 
     app.get('/api/1/potions/:id', (req, res) => {

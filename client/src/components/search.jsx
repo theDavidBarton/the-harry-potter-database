@@ -6,12 +6,13 @@ export default function Search() {
   const [dataIsReady, setDataIsReady] = useState(false)
   const [dropdownIsopened, setDropdownIsopened] = useState(false)
   const [keyword, setKeyword] = useState('')
+  const [searchType, setSearchType] = useState('characters')
 
   useEffect(() => {
     async function getApiSearch() {
       if (keyword !== '' && keyword.length > 2) {
         try {
-          const response = await fetch(`/api/1/characters?search=${keyword.toLowerCase()}`)
+          const response = await fetch(`/api/1/${searchType}?search=${keyword.toLowerCase()}`)
           const json = await response.json()
           setData(json)
           setDataIsReady(true)
@@ -21,7 +22,12 @@ export default function Search() {
       }
     }
     getApiSearch()
-  }, [keyword])
+  }, [keyword, searchType])
+
+  const setSearchTypeFn = event => {
+    setSearchType(event.target.value)
+    setKeyword('')
+  }
 
   const setKeywordInInput = event => {
     setKeyword(event.target.value)
@@ -35,23 +41,30 @@ export default function Search() {
 
   return (
     <Fragment>
-      <div className='position-relative' style={{ zIndex: 1 }}>
-        <input
-          aria-label='search for a character'
-          id='searchform'
-          className='form-control mt-2'
-          type='text'
-          placeholder='Type a character name…'
-          value={keyword}
-          onChange={setKeywordInInput}
-        />
+      <div className='input-group position-relative' style={{ zIndex: 1 }}>
+        <div className='input-group-prepend'>
+          <select id='search-type-select' name='search-type' onChange={setSearchTypeFn}>
+            <option value='characters'>Characters</option>
+            <option value='spells'>Spells</option>
+            <option value='potions'>Potions</option>
+          </select>
+          <input
+            aria-label={`search for a ${searchType.replace(/s$/, '')}`}
+            id='searchform'
+            className='form-control mt-2'
+            type='text'
+            placeholder={`Type a ${searchType.replace(/s$/, '')} name…`}
+            value={keyword}
+            onChange={setKeywordInInput}
+          />
+        </div>
         {dataIsReady ? (
           <Fragment>
             {dropdownIsopened && keyword.length > 2 ? (
               <div className='bg-white w-auto text-dark position-absolute dropdown-position py-2 px-2'>
                 <ul className='list-unstyled mb-0'>
                   {data.length > 0 ? (
-                    data.map(result => <SearchDropdownItem key={result.id} result={result} />)
+                    data.map(result => <SearchDropdownItem key={result.id} searchType={searchType} result={result} />)
                   ) : (
                     <SearchDropdownItemNoResult />
                   )}
