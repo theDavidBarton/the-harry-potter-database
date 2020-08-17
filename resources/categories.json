@@ -1,5 +1,18 @@
 [
-  { "id": 1, "category": "books" },
-  { "id": 2, "category": "characters" },
-  { "id": 3, "category": "spells" }
+  {
+    "id": 1,
+    "category": "books"
+  },
+  {
+    "id": 2,
+    "category": "characters"
+  },
+  {
+    "id": 3,
+    "category": "spells"
+  },
+  {
+    "id": 4,
+    "category": "potions"
+  }
 ]

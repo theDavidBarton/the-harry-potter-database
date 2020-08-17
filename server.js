@@ -33,6 +33,7 @@ const categories = require('./resources/categories.json')
 const books = require('./resources/books.json')
 const characters = require('./resources/characters.json')
 const spells = require('./resources/spells.json')
+const potions = require('./resources/potions.json')
 
 // searches based on string query
 const search = query => {
@@ -118,6 +119,19 @@ const endpointCreation = () => {
       const idResult = spells.filter(spell => spell.id == id)
       idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
       console.log(`/api/1/spells/${id} endpoint has been called!`)
+    })
+
+    // potions
+    app.get('/api/1/potions/', (req, res) => {
+      res.json(potions)
+      console.log('/api/1/potions/ endpoint has been called!')
+    })
+
+    app.get('/api/1/potions/:id', (req, res) => {
+      const id = req.params.id
+      const idResult = potions.filter(potion => potion.id == id)
+      idResult[0] ? res.json(idResult) : res.status(404).json([{ error: 'no such id!' }])
+      console.log(`/api/1/potions/${id} endpoint has been called!`)
     })
 
     app.listen(port)

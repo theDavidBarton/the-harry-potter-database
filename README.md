@@ -28,6 +28,11 @@
 - /api/1/spells
 - /api/1/spells/{id}
 
+`GET` **potions**
+
+- /api/1/potions
+- /api/1/potions/{id}
+
 # Copyright
 
 The Harry Potter Database is a non-commercial open source project.
