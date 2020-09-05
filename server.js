@@ -39,7 +39,7 @@ const potions = require('./resources/potions.json')
 const search = (array, query) => {
   const queryRegex = new RegExp('.*' + query + '.*', 'gi')
   const results = array.filter(el => {
-    if (el.name.match(queryRegex)) return el
+    if (el.name ? el.name.match(queryRegex) : el.title.match(queryRegex)) return el
   })
   return results
 }
@@ -73,9 +73,16 @@ const endpointCreation = () => {
     })
 
     // books
-    app.get('/api/1/books/', (req, res) => {
+    app.get('/api/1/books', (req, res) => {
+      const query = req.query.search
+      const results = search(books, query)
+      res.json(results)
+      console.log(`/api/1/books?search=${query} endpoint has been called!`)
+    })
+
+    app.get('/api/1/books/all', (req, res) => {
       res.json(books)
-      console.log('/api/1/books/ endpoint has been called!')
+      console.log('/api/1/books/all endpoint has been called!')
     })
 
     app.get('/api/1/books/:id', (req, res) => {
@@ -86,8 +93,6 @@ const endpointCreation = () => {
     })
 
     // characters
-
-    // providing a dynamic endpoint for searches
     app.get('/api/1/characters', (req, res) => {
       const query = req.query.search
       const results = search(characters, query)

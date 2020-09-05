@@ -55,12 +55,25 @@ pre code {
 }
 
 .dropdown-position {
-  top: 35px;
+  top: 3rem;
 }
 
-.form-control:focus {
+select {
+  font-size: small;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.form-control {
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.form-control:focus,
+select:focus {
   border-color: #ffc107;
   box-shadow: none;
+  outline: none;
 }
 
 .result-list-width {

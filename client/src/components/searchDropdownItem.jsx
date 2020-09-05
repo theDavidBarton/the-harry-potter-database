@@ -7,7 +7,7 @@ export default function SearchDropdownItem({ searchType, result }) {
         <li key={result.id + '_li'} className='my-1 text-nowrap d-inline-block text-truncate result-list-width'>
           <span key={result.id + '_span'} className='mx-1'>
             {result.gender === 'Female' ? '♀ ' : '♂ '}
-            {result.name}
+            {result.name ? result.name : result.title}
           </span>
         </li>
       </a>

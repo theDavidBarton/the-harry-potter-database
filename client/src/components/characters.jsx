@@ -16,7 +16,7 @@ export default function Characters() {
         window.location.pathname = window.location.pathname.replace(path, '404')
       } else {
         const json = await response.json()
-        const responseBooks = await fetch('/api/1/books')
+        const responseBooks = await fetch('/api/1/books/all')
         const jsonBooks = await responseBooks.json()
         setData(json[0])
         setBooks(jsonBooks)

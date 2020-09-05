@@ -41,19 +41,21 @@ export default function Search() {
 
   return (
     <Fragment>
-      <div className='input-group position-relative' style={{ zIndex: 1 }}>
+      <div className='input-group position-relative mt-2' style={{ zIndex: 1 }}>
         <div className='input-group-prepend'>
           <select id='search-type-select' name='search-type' onChange={setSearchTypeFn}>
             <option value='characters'>Characters</option>
+            <option value='books'>Books</option>
             <option value='spells'>Spells</option>
             <option value='potions'>Potions</option>
           </select>
           <input
             aria-label={`search for a ${searchType.replace(/s$/, '')}`}
             id='searchform'
-            className='form-control mt-2'
+            className='form-control'
             type='text'
-            placeholder={`Type a ${searchType.replace(/s$/, '')} name…`}
+            placeholder='Search THPDb'
+            autoComplete='off'
             value={keyword}
             onChange={setKeywordInInput}
           />

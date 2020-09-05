@@ -2,6 +2,8 @@
 
 🗲 A REST api to feed database about Harry Potter books.
 
+7 books, 756 characters, 150 potions and 305 spells.
+
 ![client](screenshot.jpg)
 
 # API docs
@@ -14,7 +16,8 @@
 
 `GET` **books**
 
-- /api/1/books
+- /api/1/books (mandatory parameter: **?search**)
+- /api/1/books/all
 - /api/1/books/{id}
 
 `GET` **characters**
