@@ -9,15 +9,17 @@ export default function Books() {
 
   const { id } = useParams()
 
+  const domain = process.env.NODE_ENV === 'production' ? 'https://the-harry-potter-database-backend.onrender.com' : ''
+
   const getApiBooks = useCallback(async () => {
     try {
-      const response = await fetch(`/api/1/books/${id ? id : 1}`)
+      const response = await fetch(`${domain}/api/1/books/${id ? id : 1}`)
       if (response.status >= 400) {
         const path = window.location.pathname
         window.location.pathname = window.location.pathname.replace(path, '404')
       } else {
         const json = await response.json()
-        const responseCharacters = await fetch('/api/1/characters/all')
+        const responseCharacters = await fetch(`${domain}/api/1/characters/all`)
         const jsonCharacters = await responseCharacters.json()
         setData(json[0])
         setCharacters(jsonCharacters)
@@ -26,7 +28,7 @@ export default function Books() {
     } catch (e) {
       console.error(e)
     }
-  }, [id])
+  }, [id, domain])
 
   useEffect(() => {
     getApiBooks()

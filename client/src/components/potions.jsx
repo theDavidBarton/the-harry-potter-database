@@ -7,9 +7,11 @@ export default function Potions() {
 
   const { id } = useParams()
 
+  const domain = process.env.NODE_ENV === 'production' ? 'https://the-harry-potter-database-backend.onrender.com' : ''
+
   const getApiPotions = useCallback(async () => {
     try {
-      const response = await fetch(`/api/1/potions/${id ? id : 1}`)
+      const response = await fetch(`${domain}/api/1/potions/${id ? id : 1}`)
       if (response.status >= 400) {
         const path = window.location.pathname
         window.location.pathname = window.location.pathname.replace(path, '404')
@@ -21,7 +23,7 @@ export default function Potions() {
     } catch (e) {
       console.error(e)
     }
-  }, [id])
+  }, [id, domain])
 
   useEffect(() => {
     getApiPotions()
