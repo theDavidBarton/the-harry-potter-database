@@ -7,12 +7,13 @@ export default function Search() {
   const [dropdownIsopened, setDropdownIsopened] = useState(false)
   const [keyword, setKeyword] = useState('')
   const [searchType, setSearchType] = useState('characters')
+  const domain = process.env.NODE_ENV === 'production' ? 'https://the-harry-potter-database-backend.onrender.com' : ''
 
   useEffect(() => {
     async function getApiSearch() {
       if (keyword !== '' && keyword.length > 2) {
         try {
-          const response = await fetch(`/api/1/${searchType}?search=${keyword.toLowerCase()}`)
+          const response = await fetch(`${domain}/api/1/${searchType}?search=${keyword.toLowerCase()}`)
           const json = await response.json()
           setData(json)
           setDataIsReady(true)
@@ -22,7 +23,7 @@ export default function Search() {
       }
     }
     getApiSearch()
-  }, [keyword, searchType])
+  }, [keyword, searchType, domain])
 
   const setSearchTypeFn = event => {
     setSearchType(event.target.value)

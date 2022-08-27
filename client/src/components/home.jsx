@@ -3,10 +3,11 @@ import React, { useState, useEffect, Fragment } from 'react'
 export default function Home() {
   const [data, setData] = useState(null)
   const [dataIsReady, setDataIsReady] = useState(false)
+  const domain = process.env.NODE_ENV === 'production' ? 'https://the-harry-potter-database-backend.onrender.com' : ''
 
   async function getApiBooks() {
     try {
-      const response = await fetch('/api/1/books/all')
+      const response = await fetch(`${domain}/api/1/books/all`)
       const json = await response.json()
       setData(json)
       setDataIsReady(true)

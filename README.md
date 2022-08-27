@@ -54,4 +54,4 @@ The content available via the api is licensed under _Attribution-NonCommercial-S
 
 This project is open source and carries an [MIT licence](LICENSE).
 
-Copyright (c) 2020 David Barton (theDavidBarton)
+Copyright (c) 2020, 2022 David Barton (theDavidBarton)

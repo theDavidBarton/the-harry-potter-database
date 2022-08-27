@@ -6,16 +6,16 @@ on:
       - master
 
 jobs:
-  deploy-on-heroku:
+  deploy-on-render:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
 
-      - name: Use Node.js 12.x
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 16.x
 
       - name: Yarn install BE
         run: yarn
@@ -31,5 +31,5 @@ jobs:
           cd client
           yarn lint .
 
-      - name: Deploy to Heroku
-        run: echo "Follow deployment on Heroku https://dashboard.heroku.com/apps/the-harry-potter-database/activity"
+      - name: Deploy to Render.com
+        run: echo "Follow deployment on Render.com https://dashboard.render.com/"
