@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react'
+import Loading from './loading'
 
 export default function Home() {
   const [data, setData] = useState(null)
@@ -39,7 +40,7 @@ export default function Home() {
             </div>
           ))}
         </Fragment>
-      ) : null}
+      ) : <Loading/> }
     </Fragment>
   )
 }
