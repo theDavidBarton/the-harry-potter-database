@@ -18,6 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     getApiBooks()
+    // eslint-disable-next-line
   }, [])
 
   return (
