@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment, useCallback } from 'react'
 import { useParams } from 'react-router-dom'
+import Loading from './loading'
 
 export default function Characters() {
   const [data, setData] = useState(null)
@@ -148,7 +149,7 @@ export default function Characters() {
             </pre>
           </div>
         </Fragment>
-      ) : null}
+      ) : <Loading/> }
     </Fragment>
   )
 }

@@ -21,6 +21,10 @@ pre code {
   color: #ffc107;
 }
 
+.loading {
+  padding: 7.65rem!important;
+}
+
 .github {
   padding: unset;
   width: 50px;

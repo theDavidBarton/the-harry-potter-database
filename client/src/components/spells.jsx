@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment, useCallback } from 'react'
 import { useParams } from 'react-router-dom'
+import Loading from './loading'
 
 export default function Spells() {
   const [data, setData] = useState(null)
@@ -96,7 +97,7 @@ export default function Spells() {
             </pre>
           </div>
         </Fragment>
-      ) : null}
+      ) : <Loading/> }
     </Fragment>
   )
 }
