@@ -38,6 +38,11 @@
 - /api/1/potions/all
 - /api/1/potions/{id}
 
+_(availability)_   
+`GET` **health**  
+
+- /health (optional parameter: **`?from=`**)
+
 # Copyright
 
 The Harry Potter Database is a non-commercial open source project.
