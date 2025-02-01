@@ -1,6 +1,6 @@
 # the-harry-potter-database
 
-🗲 A REST api to feed database about Harry Potter books.
+🗲 REST API feeds database about Harry Potter books.
 
 7 books, 756 characters, 150 potions and 305 spells.
 
@@ -45,11 +45,11 @@ _(availability)_
 
 # Copyright
 
-The Harry Potter Database is a non-commercial open source project.
+The Harry Potter Database is a non-commercial open-source project.
 
 ## Content
 
-Harry Potter and all associated names are copyright J.K. Rowling and Warner Bros. Entertainment Inc.
+Harry Potter and all associated names are copyrighted J.K. Rowling and Warner Bros. Entertainment Inc.
 
 All data has been freely collected from open sources such as [Harry Potter Wikia](https://harrypotter.fandom.com/wiki/Main_Page).
 
@@ -57,6 +57,6 @@ The content available via the api is licensed under _Attribution-NonCommercial-S
 
 ## Software
 
-This project is open source and carries an [MIT licence](LICENSE).
+This project is open source and carries an [MIT license](LICENSE).
 
 Copyright (c) 2020, 2022 David Barton (theDavidBarton)
